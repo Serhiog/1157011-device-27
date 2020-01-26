@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Serega Grischenkov](https://up.htmlacademy.ru/htmlcss/27/user/1157011).
-* Наставник: `Макс Пушкарев`.
+- Студент: [Serega Grischenkov](https://up.htmlacademy.ru/htmlcss/27/user/1157011).
+- Наставник: `Макс Пушкарев`.
 
 ---
 
