@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="logo-top">
       <a href="index.html"><img src="img/main-logo.png" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
     </div>
     <div class="user-form">
-      <span> Поиск по сайту</span>
+      <span class="search"> Поиск по сайту</span>
       <ul>
         <li><a href="">Войти</a></li>
         <li><a href="">Сравнить</a></li>
@@ -165,19 +167,19 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a><img src="img/map.png" alt="Как нас найти" width="560" height="222"></a>
+        <a><img src="img/map.png" alt="Как нас найти ? г. Москва, ул. Строителей, 15" width="560" height="222"></a>
         <a href="" class="info">Напишите нам</a>
       </div>
       <div class="write-us">
         <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
         <form>
           <label for='name'>Ваше имя:</label>
-          <input id='name' type="text" name="name" value="Имя Фамилия">
+          <input id='name' type="text" name="name" placeholder="Имя Фамилия">
           <label for='email'>Ваш e-mail:</label>
-          <input id='email' type="text" name="email" value="email@example.com">
+          <input id='email' type="text" name="email" placeholder="email@example.com">
           <label for='letter'>Текст письма:</label>
-          <textarea id='letter' rows="6" cols="60">В свободной форме</textarea>
-          <a href="" class="info">Отправить</a>
+          <textarea id='letter' rows="6" cols="60" placeholder="В свободной форме"></textarea>
+          <button type="button">Отправить</button>
         </form>
       </div>
     </section>
@@ -211,3 +213,19 @@
 </body>
 
 </html>
+<!-- Доступность:
+aria-label-описание для скринридера
+tabindex
+
+class .visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+} - заголовок скрытый
+
+-->
