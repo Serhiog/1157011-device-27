@@ -23,20 +23,20 @@
     </div>
     <nav>
       <a class="catalog-top" href="catalog.html">Каталог товаров</a>
+      <ul class="catalogs">
+        <li>Виртуальная реальность</li>
+        <li>Моноподы для селфи</li>
+        <li>Экшн-камеры</li>
+        <li>Фитнес-браслеты</li>
+        <li>Умные часы</li>
+        <li>Квадрокоптеры</li>
+      </ul>
       <ul>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
-    <ul class="catalogs">
-      <li>Виртуальная реальность</li>
-      <li>Моноподы для селфи</li>
-      <li>Экшн-камеры</li>
-      <li>Фитнес-браслеты</li>
-      <li>Умные часы</li>
-      <li>Квадрокоптеры</li>
-    </ul>
   </header>
   <main>
     <section class="slider">
@@ -65,33 +65,35 @@
         <div class="item-image">
           <img src="img/fitness-tracker.png" alt="Фитнес браслет" width="345" height="485">
         </div>
-        <h1>Худеем<br> правильно!</h1>
-        <p>
-          Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-        </p>
-        <a href="" class="info">Подрбнее</a>
-      </div>
-      <dl>
-        <dd>48 часов</dd>
-        <dt>Без подзарядки</dt>
-      </dl>
+        <div>
+          <h1>Худеем<br> правильно!</h1>
+          <p>
+            Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          </p>
+          <a href="" class="info">Подрбнее</a>
+          <dl>
+            <dd>48 часов</dd>
+            <dt>Без подзарядки</dt>
+          </dl>
+        </div>
       </div>
       <div class="item-3">
         <div class="item-image">
           <img src="img/quadrocopter.png" alt="Крутой квадрокоптер" width="526" height="334">
         </div>
-        <h1>Порхает как бабочка,<br> жалит как пчела!</h1>
-        <p>
-          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a href="" class="info">Подрбнее</a>
-      </div>
-      <dl>
-        <dt>800 м</dt>
-        <dd>Дальность полета</dd>
-        <dt>50 м</dt>
-        <dd>Радиус поражения</dd>
-      </dl>
+        <div>
+          <h1>Порхает как бабочка,<br> жалит как пчела!</h1>
+          <p>
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a href="" class="info">Подрбнее</a>
+          <dl>
+            <dt>800 м</dt>
+            <dd>Дальность полета</dd>
+            <dt>50 м</dt>
+            <dd>Радиус поражения</dd>
+          </dl>
+        </div>
       </div>
       <div class="slider-button">
         <button></button>
@@ -171,16 +173,6 @@
         <a href="" class="info">Напишите нам</a>
       </div>
       <div class="write-us">
-        <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-        <form>
-          <label for='name'>Ваше имя:</label>
-          <input id='name' type="text" name="name" placeholder="Имя Фамилия">
-          <label for='email'>Ваш e-mail:</label>
-          <input id='email' type="text" name="email" placeholder="email@example.com">
-          <label for='letter'>Текст письма:</label>
-          <textarea id='letter' rows="6" cols="60" placeholder="В свободной форме"></textarea>
-          <button type="button">Отправить</button>
-        </form>
       </div>
     </section>
   </main>
@@ -210,6 +202,15 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/logo-html.svg" alt="Мини лого сайта" width="27" height="35"></a>
     </div>
   </footer>
+  <form>
+    <label for='name'>Ваше имя:</label>
+    <input id='name' type="text" name="name" placeholder="Имя Фамилия">
+    <label for='email'>Ваш e-mail:</label>
+    <input id='email' type="text" name="email" placeholder="email@example.com">
+    <label for='letter'>Текст письма:</label>
+    <textarea id='letter' rows="6" cols="60" placeholder="В свободной форме"></textarea>
+    <button type="button">Отправить</button>
+  </form>
 </body>
 
 </html>
