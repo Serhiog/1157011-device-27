@@ -14,7 +14,10 @@
       <a href="index.html"><img src="img/main-logo.png" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
     </div>
     <div class="user-form">
-      <span> Поиск по сайту</span>
+      <form action="" method="get">
+  <input type='search' name="search" placeholder='Поиск по сайту'></input>
+</form>
+
       <ul>
         <li><a href="">Валентин Петухов</a></li>
         <li><a href="">Выйти</a></li>
@@ -60,19 +63,27 @@
       </div>
     </div>
     <div class="filters-items">
-      <form class="filters">
-        <label for="price">Стоимость</label>
-        <input id="price" type="range" min="0" max="1000" name="price">
-        <p>Цвет</p>
-        <input id="color" type="checkbox" name="black"><label>Черный</label>
-        <input id="color" type="checkbox" name="white"><label>Белый</label>
-        <input id="color" type="checkbox" name="blue"><label>Синий</label>
-        <input id="color" type="checkbox" name="red"><label>Красный</label>
-        <input id="color" type="checkbox" name="rose"><label>Розовый</label>
-        <p>Bluetooth</p>
-        <input type="radio" name="Bluetooth"><label>Есть</label>
-        <input type="radio" name="Bluetooth"><label>Нет</label>
-        <a href="" class="info">Показать</a>
+      <form action="" method="get" class="filters">
+        <div class="filter-price">
+          <p>Стоимость</p>
+          <input id="price" type="range" min="0" max="1000" name="price">
+        </div>
+        <div class="filter-color">
+          <p>Цвет</p>
+          <input id="black" type="checkbox" name="black"><label for="black">Черный</label>
+          <input id="white" type="checkbox" name="white"><label for="white">Белый</label>
+          <input id="blue" type="checkbox" name="blue"><label for="blue">Синий</label>
+          <input id="red" type="checkbox" name="red"><label for="red">Красный</label>
+          <input id="rose" type="checkbox" name="rose"><label for="rose">Розовый</label>
+        </div>
+        <div class="filter-bluetooth">
+          <p>Bluetooth</p>
+          <input id="yes" type="radio" name="Bluetooth"><label for="yes">Есть</label>
+          <input id="no" type="radio" name="Bluetooth"><label for="no">Нет</label>
+        </div>
+        <div class="filter-show">
+          <button class="info">Показать></button>
+        </div>
       </form>
       <div class="item-section">
         <section class="items">
