@@ -1,37 +1,36 @@
 @font-face {
-
   font-family: "Gilroy";
   font-weight: 300;
   font-style: normal;
-  src: url(fonts/gilroy/Gilroylight.ttf) format("ttf");
+  src: url(.../fonts/gilroylight.woff) format("woff");
+  src: url(.../fonts/gilroylight.woff2) format("woff2");
 }
 
 @font-face {
-
   font-family: "Gilroy-Bold";
-  src: url("fonts/gilroy/Gilroyextrabold.ttf") format('ttf');
+  src: url(.../fonts/gilroyextrabold.woff) format("woff");
+  src: url(.../fonts/gilroyextrabold.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-
   font-family: "OpenSans-Light";
   font-weight: 300;
   font-style: normal;
-  src: url(fonts/open_sans/OpenSans-Light.ttf) format('ttf');
+  src: url(.../fonts/opensanslight.woff) format("woff");
+  src: url(.../fonts/opensanslight.woff2) format("woff2");
 }
 
 @font-face {
-
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans";
   font-weight: 400;
   font-style: normal;
-  src: url(fonts/open_sans/OpenSans-Regular.ttf) format('ttf');
+  src: url(.../fonts/opensans.woff) format("woff");
+  src: url(.../fonts/opensans.woff2) format("woff2");
 }
 
 .visually-hidden {
-
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -43,15 +42,18 @@
   overflow: hidden;
 }
 
-.header {
+body {
+  font-family: 'OpenSans-Light';
+  font-size: 15px;
+}
 
+.header {
   width: 1160px;
   height: 299px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .user-form a {
-
   font-family: "OpenSans-Light";
   font-size: 15px;
   line-height: 30px;
@@ -62,24 +64,19 @@
 }
 
 .user-form li {
-
   list-style-type: none;
 }
 
 .catalogs li {
-
   list-style-type: none;
   font-family: "Gilroy-Bold";
   font-size: 18px;
   font-weight: 400;
   color: #000000;
   line-height: 24px;
-
-
 }
 
 .catalogs a {
-
   font-family: "Gilroy-Bold";
   text-decoration: none;
   text-transform: uppercase;
@@ -90,19 +87,15 @@
 }
 
 .slider h1 {
-
   font-family: "Gilroy-Bold";
   font-size: 47px;
   color: #000000;
   line-height: 56px;
   letter-spacing: 0.17px;
-  font-weight: 400;
+
 }
 
 .slider p {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -110,7 +103,6 @@
 }
 
 .info {
-
   font-family: "Gilroy-Bold";
   font-size: 18px;
   font-weight: 400;
@@ -130,7 +122,6 @@
 }
 
 .slider dd {
-
   font-family: "OpenSans-Light";
   font-size: 13px;
   font-weight: 300;
@@ -140,7 +131,6 @@
 }
 
 .list-items a {
-
   font-family: "Gilroy-Bold";
   font-size: 18px;
   font-weight: 400;
@@ -151,20 +141,15 @@
 }
 
 .info-content h2 {
-
   font-family: "Gilroy-Bold";
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.21px;
   color: #000000;
-
 }
 
 .info-content p {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -172,7 +157,6 @@
 }
 
 .about-company h2 {
-
   font-family: "Gilroy-Bold";
   font-size: 47px;
   font-weight: 400;
@@ -182,18 +166,13 @@
 }
 
 .advantages {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
   color: #464646;
-
 }
 
 .about-us li {
-
   font-family: "Gilroy-Bold";
   font-size: 16px;
   font-weight: 400;
@@ -204,31 +183,22 @@
 }
 
 .footer {
-
   background-color: #464646;
 }
 
 .user-form-bottom a {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
   color: #ffffff;
   text-decoration: none;
-
 }
 
 .user-form-bottom li {
-
   list-style-type: none;
 }
 
 .footer-nav p {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -236,12 +206,10 @@
 }
 
 .footer-nav li {
-
   list-style-type: none;
 }
 
 .footer-nav a {
-
   font-family: "Gilroy-Bold";
   font-size: 18px;
   font-weight: 400;
@@ -250,13 +218,9 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-
 }
 
 .footer-nav a:nth-child(3) {
-
-  font-family: "OpenSans-Light";
-  font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -265,28 +229,23 @@
 }
 
 .footer-contacts li {
-
   list-style-type: none;
 }
 
 
 .user-form-bottom img {
-
   fill: #ffc600;
 }
 
-form label {
-
+.write-us label {
   font-family: "Gilroy-Bold";
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #000;
 }
 
 .title-catalog {
-
   font-family: "Gilroy-Bold";
   font-size: 47px;
   font-weight: 400;
@@ -296,12 +255,10 @@ form label {
 }
 
 .breadcrumbs li {
-
   list-style-type: none;
 }
 
 .breadcrumbs a {
-
   text-decoration: none;
   font-family: "OpenSans-Light";
   font-size: 14px;
@@ -312,7 +269,6 @@ form label {
 }
 
 .filter p {
-
   font-family: "Gilroy-Bold";
   font-size: 16px;
   font-weight: 400;
@@ -323,13 +279,11 @@ form label {
 }
 
 .filter-sort li {
-
   list-style-type: none;
 }
 
 
 .filter-sort a {
-
   font-family: "OpenSans-Light";
   font-size: 14px;
   font-weight: 400;
@@ -341,7 +295,6 @@ form label {
 }
 
 .filters-items p {
-
   font-family: "Gilroy-Bold";
   font-size: 18px;
   font-weight: 400;
@@ -351,7 +304,6 @@ form label {
 }
 
 .price-item {
-
   font-family: "Gilroy";
   font-size: 16px;
   font-weight: 300;
@@ -361,13 +313,10 @@ form label {
 }
 
 .nav-bottom {
-
   list-style-type: none;
-
 }
 
 .nav-bottom a {
-
   font-family: "Gilroy-Bold";
   font-size: 16px;
   font-weight: 400;
@@ -376,5 +325,11 @@ form label {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
+}
 
+.hover:hover {
+  opacity: 0.6;
+}
+.active:active {
+  opacity: 0.3;
 }

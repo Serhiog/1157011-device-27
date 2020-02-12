@@ -3,24 +3,24 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
   <header class="header">
     <div class="logo-top">
-      <a href="index.html"><img src="img/logo.svg" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
+      <a href="index.html"><img class="hover active" src="img/logo.svg" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
     </div>
     <div class="user-form">
       <form action="" method="get">
-        <input type='search' name="search" placeholder="Поиск по сайту">
+        <input class="hover" type='search' name="search" value="Поиск по сайту">
       </form>
       <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li class="hover active"><a href="">Войти</a></li>
+        <li class="hover active"><a href="">Сравнить</a></li>
+        <li class="hover active"><a href="">Корзина</a></li>
       </ul>
     </div>
     <nav class="catalogs">
@@ -178,7 +178,6 @@
     </section>
   </main>
   <footer class="footer">
-    </div>>
     <div class="user-form-bottom">
       <img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35">
       <ul>
@@ -205,14 +204,14 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/logo-html.svg" alt="Мини логотип сайта" width="27" height="35"></a>
     </div>
   </footer>
-  <form>
+  <form class="write-us">
     <label for='name'>Ваше имя:</label>
     <input id='name' type="text" name="name" placeholder="Имя Фамилия">
     <label for='email'>Ваш e-mail:</label>
     <input id='email' type="text" name="email" placeholder="email@example.com">
     <label for='letter'>Текст письма:</label>
     <textarea id='letter' placeholder="В свободной форме"></textarea>
-    <button type="button" class="info">Отправить</button>
+    <button type="button">Отправить</button>
   </form>
 </body>
 
