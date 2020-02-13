@@ -11,21 +11,21 @@
 <body>
   <header class="header">
     <div class="logo-top">
-      <a href="index.html"><img class="hover active" src="img/logo.svg" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
+      <a href="index.html"><img src="img/logo.svg" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
     </div>
     <div class="user-form">
-      <form action="" method="get">
-        <input class="hover" type='search' name="search" value="Поиск по сайту">
+      <form class="form-search" action="" method="get">
+        <input type='search' name="search" placeholder='Поиск по сайту'>
       </form>
       <ul>
-        <li class="hover active"><a href="">Войти</a></li>
-        <li class="hover active"><a href="">Сравнить</a></li>
-        <li class="hover active"><a href="">Корзина</a></li>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Сравнить</a></li>
+        <li><a href="">Корзина</a></li>
       </ul>
     </div>
     <nav class="catalogs">
       <a href="catalog.html">Каталог товаров</a>
-      <ul>
+      <ul class="catalogs-menu">
         <li><a href="">Виртуальная реальность</a></li>
         <li><a href="">Моноподы для селфи</a></li>
         <li><a href="">Экшн-камеры</a></li>
@@ -52,7 +52,9 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь
             (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="" class="info">Подробнее</a>
+          <div class="info">
+            <a href="#">Подробнее</a>
+          </div>
           <dl>
             <dt>8.5 м</dt>
             <dd>Длина палки</dd>

@@ -1,33 +1,17 @@
 @font-face {
   font-family: "Gilroy";
-  font-weight: 300;
+  src: url(../fonts/gilroyextrabold.woff) format("woff");
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2");
+  font-weight: 800;
   font-style: normal;
-  src: url(.../fonts/gilroylight.woff) format("woff");
-  src: url(.../fonts/gilroylight.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url(.../fonts/gilroyextrabold.woff) format("woff");
-  src: url(.../fonts/gilroyextrabold.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans-Light";
-  font-weight: 300;
-  font-style: normal;
-  src: url(.../fonts/opensanslight.woff) format("woff");
-  src: url(.../fonts/opensanslight.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "OpenSans";
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  src: url(.../fonts/opensans.woff) format("woff");
-  src: url(.../fonts/opensans.woff2) format("woff2");
+  src: url(../fonts/opensanslight.woff) format("woff");
+  src: url(../fonts/opensanslight.woff2) format("woff2");
 }
 
 .visually-hidden {
@@ -43,8 +27,13 @@
 }
 
 body {
-  font-family: 'OpenSans-Light';
+  font-family: "OpenSans";
   font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.15px;
+  color: #000000;
 }
 
 .header {
@@ -54,9 +43,9 @@ body {
 }
 
 .user-form a {
-  font-family: "OpenSans-Light";
+  font-family: 'OpenSans';
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   font-weight: 300;
   color: #000000;
   text-decoration: none;
@@ -69,25 +58,33 @@ body {
 
 .catalogs li {
   list-style-type: none;
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
   line-height: 24px;
 }
 
 .catalogs a {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
   line-height: 24px;
 }
 
+.catalogs-menu a {
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+
 .slider h1 {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 47px;
   color: #000000;
   line-height: 56px;
@@ -96,20 +93,24 @@ body {
 }
 
 .slider p {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
   color: #464646;
 }
 
-.info {
-  font-family: "Gilroy-Bold";
+.info a {
+  font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
   text-decoration: none;
+  color: #000;
+  margin-left: 44px;
+  margin-right: 43px;
 }
 
 .slider dt {
@@ -122,7 +123,7 @@ body {
 }
 
 .slider dd {
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans";
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -131,9 +132,9 @@ body {
 }
 
 .list-items a {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
@@ -141,15 +142,16 @@ body {
 }
 
 .info-content h2 {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
   color: #000000;
 }
 
 .info-content p {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -157,15 +159,16 @@ body {
 }
 
 .about-company h2 {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
   color: #000000;
 }
 
 .advantages {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -173,9 +176,9 @@ body {
 }
 
 .about-us li {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: 0.15px;
   color: #000000;
@@ -187,6 +190,7 @@ body {
 }
 
 .user-form-bottom a {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
@@ -199,6 +203,7 @@ body {
 }
 
 .footer-nav p {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -210,9 +215,9 @@ body {
 }
 
 .footer-nav a {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-decoration: none;
@@ -221,6 +226,7 @@ body {
 }
 
 .footer-nav a:nth-child(3) {
+  font-family: 'OpenSans';
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -232,13 +238,9 @@ body {
   list-style-type: none;
 }
 
-
-.user-form-bottom img {
-  fill: #ffc600;
-}
-
 .write-us label {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.15px;
@@ -246,9 +248,9 @@ body {
 }
 
 .title-catalog {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.17px;
   color: #000;
@@ -260,7 +262,7 @@ body {
 
 .breadcrumbs a {
   text-decoration: none;
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans";
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -269,9 +271,9 @@ body {
 }
 
 .filter p {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.91px;
   text-transform: uppercase;
@@ -284,9 +286,9 @@ body {
 
 
 .filter-sort a {
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 18px;
   letter-spacing: 0.14px;
   color: #000;
@@ -295,9 +297,9 @@ body {
 }
 
 .filters-items p {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000;
@@ -317,9 +319,9 @@ body {
 }
 
 .nav-bottom a {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.16px;
   color: #000;
@@ -327,9 +329,73 @@ body {
   text-transform: uppercase;
 }
 
-.hover:hover {
+.logo-top img:hover {
   opacity: 0.6;
 }
-.active:active {
+
+.logo-top img:active {
+  opacity: 0.3;
+}
+
+:hover::-webkit-input-placeholder {
+  font-family: OpenSans;
+  opacity: 0.6;
+}
+
+:focus::-webkit-input-placeholder {
+  font-family: OpenSans;
+  opacity: 0;
+}
+
+.user-form a:hover {
+  opacity: 0.6;
+}
+
+.user-form a:active {
+  opacity: 0.3;
+}
+
+.catalogs a:hover {
+  opacity: 0.6;
+}
+
+.catalogs a:active {
+  opacity: 0.3;
+}
+
+.info {
+  background-color: #f0c52e;
+  width: 220px;
+  height: 8px;
+  text-align: center;
+}
+
+.info:hover {
+  height: 40px;
+}
+
+.info:active a {
+  opacity: 0.3;
+}
+
+.list-link {
+  opacity: 0.5;
+  background-color: #f0c52e;
+  width: 160px;
+  height: 160px;
+}
+
+.list-link:hover {
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+  opacity: 1;
+}
+
+.list-link:active {
+  content: "";
+  width: 160px;
+  height: 160px;
   opacity: 0.3;
 }
