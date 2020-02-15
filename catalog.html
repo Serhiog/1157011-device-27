@@ -15,18 +15,19 @@
     </div>
     <div class="user-form">
       <form class="form-search" action="" method="get">
-        <input type='search' name="search" placeholder='Поиск по сайту'>
+        <input class="form-placeholder" type='search' name="search" placeholder='Поиск по сайту'>
+        <input id="search-button" type="submit" class="search-button" value="Найти"></input>
       </form>
       <ul>
-        <li><a href="">Валентин Петухов</a></li>
-        <li><a href="">Выйти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li><a class="enter" href="">Валентин Петухов</a></li>
+        <li><a class="enter" href="">Войти</a></li>
+        <li><a class="compare" href="">Сравнить</a></li>
+        <li><a class="cart" href="">Корзина</a></li>
       </ul>
     </div>
     <nav class="catalogs">
-      <a href="catalog.html">Каталог товаров</a>
-      <ul>
+      <a class="plus" href="catalog.html">Каталог товаров</a>
+      <ul class="catalogs-menu">
         <li><a href="">Виртуальная реальность</a></li>
         <li><a href="">Моноподы для селфи</a></li>
         <li><a href="">Экшн-камеры</a></li>
@@ -34,7 +35,7 @@
         <li><a href="">Умные часы</a></li>
         <li><a href="">Квадрокоптеры</a></li>
       </ul>
-      <ul>
+      <ul class="advatages-top">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -46,12 +47,12 @@
       <h1>Моноподы для селфи</h1>
     </div>
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li><a class="breadcrumbs-arrow" href="index.html">Главная</a></li>
+      <li><a class="breadcrumbs-arrow" href="catalog.html">Каталог товаров</a></li>
       <li><a>Моноподы для селфи</a></li>
     </ul>
     <div class="filter">
-      <p>Фильтр:</p>
+      <p class="filter-back">Фильтр:</p>
       <div class="filter-sort">
         <p>Сортировка:</p>
         <ul>
@@ -69,7 +70,7 @@
         </div>
         <div class="filter-color">
           <p>Цвет</p>
-          <input id="black" type="checkbox" name="black"><label for="black">Черный</label>
+          <input class="ggg" id="black" type="checkbox" name="black"><label for="black">Черный</label>
           <input id="white" type="checkbox" name="white"><label for="white">Белый</label>
           <input id="blue" type="checkbox" name="blue"><label for="blue">Синий</label>
           <input id="red" type="checkbox" name="red"><label for="red">Красный</label>
@@ -80,8 +81,8 @@
           <input id="yes" type="radio" name="Bluetooth"><label for="yes">Есть</label>
           <input id="no" type="radio" name="Bluetooth"><label for="no">Нет</label>
         </div>
-        <div class="filter-show">
-          <button class="info">Показать</button>
+        <div class="info-200">
+          <a href="#">Показать</a>
         </div>
       </form>
       <div class="item-section">
@@ -121,9 +122,9 @@
         </section>
         <ul class="nav-bottom">
           <li><a href="">Назад</a></li>
-          <li aria-label='Переход на первую страницу'><a>1</a></li>
-          <li aria-label='Переход на вторую страницу'><a href="">2</a></li>
-          <li aria-label='Переход на третью страницу'><a href="">3</a></li>
+          <li aria-label='Переход на первую страницу'><a href="#">1</a></li>
+          <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
+          <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
           <li><a href="">Вперед</a></li>
         </ul>
       </div>
@@ -133,14 +134,15 @@
     <div class="user-form-bottom">
       <img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35">
       <ul>
-        <li><a href="">Валентин Петухов</a></li>
-        <li><a href="">Выйти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li><a href="#">Валентин Петухов</a></li>
+        <li><a class="enter-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+              <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" /></svg>Войти</a></li>
+        <li><a class="compare-footer" href="#">Сравнить</a></li>
+        <li><a class="cart-footer" href="#">Корзина</a></li>
       </ul>
     </div>
     <div class="footer-nav">
-      <address>г. Москва, ул. Строителей, 15</address>
+      <p>г. Москва, ул. Строителей, 15</p>
       <ul>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
@@ -154,7 +156,7 @@
         <li><a href=""><img src="img/instagram.svg" alt="instagram" width="32" height="32"></a></li>
         <li><a href=""><img src="img/twitter.svg" alt="twitter" width="32" height="32"></a></li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/logo-html.svg" alt="Мини лого сайта" width="27" height="35"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/logo-html.svg" alt="Мини логотип сайта" width="27" height="35"></a>
     </div>
   </footer>
 </body>

@@ -15,16 +15,17 @@
     </div>
     <div class="user-form">
       <form class="form-search" action="" method="get">
-        <input type='search' name="search" placeholder='Поиск по сайту'>
+        <input class="form-placeholder" type='search' name="search" placeholder='Поиск по сайту'>
+        <input id="search-button" type="submit" class="search-button" value="Найти"></input>
       </form>
       <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li><a class="enter" href="">Войти</a></li>
+        <li><a class="compare" href="">Сравнить</a></li>
+        <li><a class="cart" href="">Корзина</a></li>
       </ul>
     </div>
     <nav class="catalogs">
-      <a href="catalog.html">Каталог товаров</a>
+      <a class="plus" href="catalog.html">Каталог товаров</a>
       <ul class="catalogs-menu">
         <li><a href="">Виртуальная реальность</a></li>
         <li><a href="">Моноподы для селфи</a></li>
@@ -33,7 +34,7 @@
         <li><a href="">Умные часы</a></li>
         <li><a href="">Квадрокоптеры</a></li>
       </ul>
-      <ul>
+      <ul class="advatages-top">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -74,7 +75,9 @@
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a href="" class="info">Подробнее</a>
+          <div class="info">
+            <a href="#">Подробнее</a>
+          </div>
           <dl>
             <dt>48 часов</dt>
             <dd>Без подзарядки</dd>
@@ -90,7 +93,9 @@
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="" class="info">Подробнее</a>
+          <div class="info">
+            <a href="#">Подробнее</a>
+          </div>
           <dl>
             <dt>800 м</dt>
             <dd>Дальность полета</dd>
@@ -107,19 +112,21 @@
     </section>
     <h2 class="visually-hidden">Наши товары:</h2>
     <section class="list-items">
-      <a href="" class="list-link list-link-vr">Виртуальная реальность</a>
-      <a href="" class="list-link list-link-mnpd">Моноподы для селфи</a>
-      <a href="" class="list-link list-link-am">Экшн-камеры</a>
-      <a href="" class="list-link list-link-vr">Фитнес-браслеты</a>
-      <a href="" class="list-link list-link-vr">Умные часы</a>
-      <a href="" class="list-link list-link-vr">Квадрокоптеры</a>
+      <a href="" class="list-link list-link-vr">Виртуальная<br> реальность</a>
+      <a href="" class="list-link list-link-mnpd">Моноподы<br> для селфи</a>
+      <a href="" class="list-link list-link-ac">Экшн-камеры</a>
+      <a href="" class="list-link list-link-fb">Фитнес-браслеты</a>
+      <a href="" class="list-link list-link-sw">Умные часы</a>
+      <a href="" class="list-link list-link-cu">Квадрокоптеры</a>
     </section>
     <section class="bottom-slider">
-      <ul>
-        <li><a class="delivery-black">Доставка</a></li>
-        <li><a class="info">Гарантия</a></li>
-        <li><a class="info">Кредит</a></li>
-      </ul>
+      <div class="bottom-options">
+        <ul>
+          <li><a>Доставка</a></li>
+          <li><a>Гарантия</a></li>
+          <li><a>Кредит</a></li>
+        </ul>
+      </div>
       <div class="info-content">
         <div class="delivery">
           <h2>Доставка</h2>
@@ -144,11 +151,11 @@
         </div>
       </div>
     </section>
-    <section class="labels">
-      <a href=""><img src="img/logo-dji.png" alt="dji" width="260" height="100"></a>
-      <a href=""><img src="img/logo-spgadgets.jpg" alt="spgadgets" width="260" height="100"></a>
-      <a href=""><img src="img/logo-gopro.jpg" alt="gopro" width="260" height="100"></a>
-      <a href=""><img src="img/logo-vive.jpg" alt="vive" width="260" height="100"></a>
+    <section class="lables">
+      <a href="#"><img class="dji" src="img/logo-dji.png" alt="dji" width="260" height="100"></a>
+      <a href="#"><img class="spgadgets" src="img/spgadgets.png" alt="spgadgets" width="260" height="100"></a>
+      <a href="#"><img class="gopro" src="img/gopro.png" alt="gopro" width="260" height="100"></a>
+      <a href="#"><img class="vive" src="img/vive.png" alt="vive" width="260" height="100"></a>
     </section>
     <section class="about-company">
       <div class="about-us">
@@ -166,7 +173,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="" class="info">Подрбнее о нас</a>
+        <div class="info-260">
+          <a href="#">Подробнее о нас</a>
+        </div>
       </div>
       <div class="contacts">
         <h2>Контакты</h2>
@@ -175,7 +184,9 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
         <a><img src="img/map.png" alt="Как нас найти ? г. Москва, ул. Строителей, 15" width="560" height="222"></a>
-        <a href="" class="info">Напишите нам</a>
+        <div class="info-260">
+          <a href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
@@ -183,9 +194,9 @@
     <div class="user-form-bottom">
       <img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35">
       <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+        <li><a class="enter-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a></li>
+        <li><a class="compare-footer" href="#">Сравнить</a></li>
+        <li><a class="cart-footer" href="#">Корзина</a></li>
       </ul>
     </div>
     <div class="footer-nav">
@@ -213,7 +224,9 @@
     <input id='email' type="text" name="email" placeholder="email@example.com">
     <label for='letter'>Текст письма:</label>
     <textarea id='letter' placeholder="В свободной форме"></textarea>
-    <button type="button">Отправить</button>
+    <div class="info">
+      <a href="#" type="button">Отправить</a>
+    </div>
   </form>
 </body>
 
