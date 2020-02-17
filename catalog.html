@@ -132,13 +132,11 @@
   </main>
   <footer class="footer">
     <div class="user-form-bottom">
-      <img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35">
+      <a href="index.html" alt="Логотип Device" width="163px" height="35px"><img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35"></a>
       <ul>
-        <li><a href="#">Валентин Петухов</a></li>
-        <li><a class="enter-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
-              <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" /></svg>Войти</a></li>
-        <li><a class="compare-footer" href="#">Сравнить</a></li>
-        <li><a class="cart-footer" href="#">Корзина</a></li>
+        <li><a class="enter-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" /></svg>Войти</a></li>
+        <li><a class="compare-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>Сравнить</a></li>
+        <li><a class="cart-footer" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a></li>
       </ul>
     </div>
     <div class="footer-nav">
@@ -159,6 +157,17 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/logo-html.svg" alt="Мини логотип сайта" width="27" height="35"></a>
     </div>
   </footer>
+  <form class="write-us">
+    <label for='name'>Ваше имя:</label>
+    <input id='name' type="text" name="name" placeholder="Имя Фамилия">
+    <label for='email'>Ваш e-mail:</label>
+    <input id='email' type="text" name="email" placeholder="email@example.com">
+    <label for='letter'>Текст письма:</label>
+    <textarea id='letter' placeholder="В свободной форме"></textarea>
+    <div class="info">
+      <a href="#" type="button">Отправить</a>
+    </div>
+  </form>
 </body>
 
 </html>
