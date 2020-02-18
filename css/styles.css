@@ -378,11 +378,13 @@ body {
   opacity: 0.3;
 }
 
-.plus:hover, .advatages-top a:hover {
+.plus:hover,
+.advatages-top a:hover {
   color: rgba(185, 170, 117, 0.6);
 }
 
-.plus:active, .advatages-top a:active {
+.plus:active,
+.advatages-top a:active {
   color: rgba(185, 170, 117, 0.3);
 }
 
@@ -423,6 +425,7 @@ body {
   background: #F7E397;
   width: 160px;
   height: 160px;
+  margin-bottom: 39px;
 }
 
 .list-link:hover::before {
@@ -864,7 +867,9 @@ textarea:focus {
   margin-right: 41px;
 }
 
-.item-1, .item-2, .item-3 {
+.item-1,
+.item-2,
+.item-3 {
   display: flex;
   width: inherit;
   justify-content: space-between;
@@ -879,8 +884,16 @@ textarea:focus {
   width: 1160px;
 }
 
-.item-image {
+.item-image-1 {
   margin-left: 90px;
+}
+
+.item-image-2 {
+  margin-left: 116px;
+}
+
+.item-image-3 {
+  margin-left: 31px;
 }
 
 .discription {
@@ -892,10 +905,56 @@ textarea:focus {
   justify-content: flex-start;
 }
 
-.about-items {
+.discription-2 {
+  width: 686px;
+  display: flex;
+  margin-right: 121px;
+  margin-left: 139px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.discription-3 {
+  width: 603px;
+  display: flex;
+  margin-right: 53px;
+  margin-left: 42px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item-2 {
   display: flex;
   width: 100%;
   margin-top: 62px;
+  justify-content: space-between;
+}
+
+.item-3 {
+  display: flex;
+  width: 100%;
+  margin-top: 62px;
+  justify-content: space-between;
+}
+
+.about-items {
+  display: flex;
+  width: 100%;
+  margin-top: 64px;
+  justify-content: space-between;
+}
+
+.about-items-2 {
+  display: flex;
+  width: 100%;
+  margin-top: 64px;
+  justify-content: space-between;
+}
+
+.about-items-3 {
+  display: flex;
+  width: 100%;
+  margin-top: 64px;
   justify-content: space-between;
 }
 
@@ -926,3 +985,45 @@ textarea:focus {
   margin-right: 411px;
   margin-top: 152px;
 }
+
+.discription h1,
+.discription-2 h1,
+.discription-3 h1 {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.item-text-2 p {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.item-text-3 p {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.item-text-2 {
+  margin-top: 31px;
+}
+
+.item-text-3 {
+  margin-top: 39px;
+}
+
+.list-items {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 117px;
+}
+
+.bottom-slider {
+	display: flex;
+	margin-top: 84px;
+	width: 1445px;
+	margin-left: 47px;
+	margin-right: 38px;
