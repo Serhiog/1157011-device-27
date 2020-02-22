@@ -43,8 +43,6 @@ body {
 }
 
 .header {
-  width: 1160px;
-  height: 299px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -134,16 +132,18 @@ body {
   margin-right: 43px;
 }
 
-.slider dt {
+.specification th {
   font-family: "Gilroy";
   font-size: 36px;
   font-weight: 300;
-  line-height: 48px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
   letter-spacing: 0.36px;
   color: #000000;
 }
 
-.slider dd {
+.specification td {
   font-family: "OpenSans";
   font-size: 13px;
   font-weight: 300;
@@ -203,11 +203,21 @@ body {
   line-height: 40px;
   letter-spacing: 0.15px;
   color: #000000;
-  list-style-type: circle;
+  list-style-type: none;
+  position: relative;
+}
+
+.about-us li::before {
+  content: "○";
+  color: #e5e5e5;
+  position: absolute;
+  left: -30px;
+
 }
 
 .footer {
   background-color: #464646;
+  width: 1440px;
 }
 
 .-bottom a {
@@ -233,6 +243,7 @@ body {
 
 .footer-nav li {
   list-style-type: none;
+  margin-left: 38px;
 }
 
 .footer-nav a {
@@ -257,6 +268,7 @@ body {
 
 .footer-contacts li {
   list-style-type: none;
+   margin-left: 23px;
 }
 
 .write-us label {
@@ -413,12 +425,6 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.list-items {
-  display: flex;
-  width: 1160px;
-  justify-content: space-around;
-}
-
 .list-link::before {
   content: "";
   display: flex;
@@ -529,7 +535,7 @@ body {
   display: inline-block;
 }
 
-.search-button:hover {
+.form-placeholder:focus~.search-button:hover {
   color: #fff;
   background: rgb(0, 0, 0);
 }
@@ -549,16 +555,11 @@ body {
   height: 8px;
   align-items: center;
   justify-content: center;
-  margin-top: 33px;
+  margin-top: 57px;
 }
 
 .bottom-options a:hover {
   height: 40px;
-}
-
-.bottom-options {
-  border-right: 7px solid black;
-  height: 319px;
 }
 
 .bottom-options a:active {
@@ -566,13 +567,6 @@ body {
   width: 278px;
   background: #000;
   justify-content: left;
-}
-
-.bottom-slider {
-  background-color: #e5e5e5;
-  display: flex;
-  width: 1445px;
-  height: 288px;
 }
 
 .warranty,
@@ -602,6 +596,13 @@ body {
 
 .delivery::after {
   content: url("../img/delivery.png");
+  position: absolute;
+  top: -15px;
+  right: -250px;
+}
+
+.delivery {
+  position: relative;
 }
 
 .warranty::after {
@@ -610,11 +611,6 @@ body {
 
 .credit::after {
   content: url("../img/credit.png");
-}
-
-.about-company h2 {
-  border-top: 7px solid black;
-  width: 80px;
 }
 
 .info-260 a {
@@ -654,7 +650,11 @@ body {
 
 .footer-contacts {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 67px;
+  margin-left: 429px;
 }
 
 .footer-contacts ul {
@@ -665,7 +665,9 @@ body {
   content: "";
   border-top: 7px solid #ffc600;
   width: 80px;
-  display: block;
+  position: absolute;
+  left: 370px;
+  margin-top: 10px;
 }
 
 .write-us input,
@@ -778,11 +780,14 @@ textarea:focus {
 
 .user-form-bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+  width: 100%;
 }
 
 .user-form-bottom ul {
-  display: inherit;
+  display: flex;
 }
 
 .user-form-bottom svg {
@@ -790,20 +795,29 @@ textarea:focus {
 }
 
 .user-form-bottom li {
-  margin-right: 43px;
+  margin-left: 43px;
 }
 
 .slider-button button {
-  border: none;
-  background: none;
-}
-
-.slider-button button {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border: 1px solid black;
   border-radius: 50%;
+  background: none;
   margin-right: 21px;
+  position: relative;
+}
+
+.slider-button button:first-child::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 3px;
 }
 
 .header,
@@ -812,17 +826,18 @@ textarea:focus {
 .catalogs,
 .user-form ul,
 .advatages-top,
-.slider,
-.info,
-.slider-button {
+.slider {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  margin-left: auto;
 }
 
 .logo-top {
   width: 100%;
   margin-left: 60px;
-  height: 35px;
+  margin-top: -18px;
+  margin-bottom: 37px;
 }
 
 .catalogs {
@@ -830,6 +845,7 @@ textarea:focus {
   justify-content: space-between;
   margin-left: 60px;
   margin-right: 61px;
+  margin-bottom: 169px;
 }
 
 .catalogs-menu {
@@ -838,13 +854,17 @@ textarea:focus {
 
 .user-form ul {
   justify-content: space-between;
+  margin: 0;
 }
 
 .user-form {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   margin-left: 63px;
   margin-right: 61px;
+  margin-bottom: 50px;
 }
 
 .advatages-top li:last-child {
@@ -867,29 +887,19 @@ textarea:focus {
   margin-right: 41px;
 }
 
-.item-1,
-.item-2,
-.item-3 {
+.item {
   display: flex;
-  width: inherit;
   justify-content: space-between;
-  height: auto;
-}
-
-.main {
-  width: 1160px;
-}
-
-.slider {
-  width: 1160px;
+  width: 100%;
 }
 
 .item-image-1 {
-  margin-left: 90px;
+  margin-left: auto;
+  display: flex;
 }
 
 .item-image-2 {
-  margin-left: 116px;
+  margin-left: auto;
 }
 
 .item-image-3 {
@@ -897,21 +907,41 @@ textarea:focus {
 }
 
 .discription {
-  width: 686px;
-  display: flex;
-  margin-right: 82px;
   margin-left: 125px;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  margin-top: 68px;
+  position: relative;
+}
+
+.discription::before {
+  content: "";
+  border-top: 7px solid #fff;
+  width: 100px;
+  position: absolute;
+  top: -40px;
+}
+
+.discription::after {
+  content: "01";
+  color: #fff;
+  width: 166px;
+  height: 131px;
+  font-family: "Gilroy";
+  font-size: 179px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.79px;
+  position: absolute;
+  top: -95px;
+  right: 40px;
+
 }
 
 .discription-2 {
-  width: 686px;
-  display: flex;
-  margin-right: 121px;
-  margin-left: 139px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  margin-left: 138px;
+  margin-right: 83px;
 }
 
 .discription-3 {
@@ -923,46 +953,32 @@ textarea:focus {
   justify-content: flex-start;
 }
 
-.item-2 {
-  display: flex;
-  width: 100%;
-  margin-top: 62px;
-  justify-content: space-between;
-}
-
-.item-3 {
-  display: flex;
-  width: 100%;
-  margin-top: 62px;
-  justify-content: space-between;
-}
-
 .about-items {
   display: flex;
   width: 100%;
   margin-top: 64px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.about-items-2 {
-  display: flex;
-  width: 100%;
-  margin-top: 64px;
-  justify-content: space-between;
-}
-
-.about-items-3 {
-  display: flex;
-  width: 100%;
-  margin-top: 64px;
-  justify-content: space-between;
-}
-
-.item-text p,
 .discription h1,
 .info a,
-.slider-button button,
-.advatages-top {
+.advatages-top,
+.bottom-options ul,
+.discription h1,
+.discription-2 h1,
+.discription-3 h1,
+.item-text-2 p,
+.item-text-3 p,
+.info-content h2,
+.info-content p,
+.about-company h2,
+.about-company p,
+.about-company ul,
+.user-form-bottom ul,
+.footer-contacts ul,
+.footer-nav p,
+.footer-nav ul {
   margin: 0;
   padding: 0;
   white-space: nowrap;
@@ -970,40 +986,19 @@ textarea:focus {
 
 .item-text {
   margin-top: 31px;
+  display: flex;
+
 }
 
-.slider-button button {
-  margin-left: 21px;
-}
-
-.body {
-  width: 1946px;
-}
-
-.common-width {
-  margin-left: 375px;
-  margin-right: 411px;
-  margin-top: 152px;
-}
-
-.discription h1,
-.discription-2 h1,
-.discription-3 h1 {
+.item-text p {
+  width: 485px;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
 }
 
-.item-text-2 p {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-}
-
-.item-text-3 p {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
+.container {
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .item-text-2 {
@@ -1015,15 +1010,184 @@ textarea:focus {
 }
 
 .list-items {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 117px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 117px;
 }
 
 .bottom-slider {
+  margin-top: 160px;
+  background-color: #e5e5e5;
+  width: 1445px;
+  min-height: 288px;
+}
+
+.contaier-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-slider .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -35px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.header.container {
+  margin-top: 73px;
+}
+
+.slider {
+  margin-top: -100px;
+}
+
+.specification td,
+th {
+  padding-right: 81px;
+}
+
+.specification td {
+  padding-top: 20px;
+}
+
+.specification {
+  margin-top: 76px;
+}
+
+.slider-button {
+  margin-left: 179px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.info-content {
+  display: flex;
+  margin-right: auto;
+  position: relative;
+  margin-left: 241px;
+}
+
+.info-content::before {
+  content: "";
+  border-right: 7px solid;
+  height: 319px;
+  position: absolute;
+  left: -125px;
+  top: -55px;
+}
+
+.bottom-options {
+  display: flex;
+  margin-top: -28px;
+}
+
+.delivery p {
+  margin-top: 43px;
+}
+
+.lables {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-company {
+  margin-top: 152px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.about-us .advantages {
+  width: 490px;
+  white-space: normal;
+  margin-top: 55px;
+}
+
+.about-us {
+  margin-right: 139px;
+  position: relative;
+}
+
+.contacts .advantages {
+  width: 520px;
+  white-space: normal;
+  margin-top: 59px;
+}
+
+.about-us ul {
+  margin-top: 80px;
+  padding-left: 20px;
+}
+
+.about-us .info-260 {
+  margin-top: 41px;
+}
+
+.contacts img {
+  margin-top: 44px;
+}
+
+.contacts .info-260 {
+  margin-top: 83px;
+}
+
+.about-us::before,
+.contacts::before {
+
+  content: "";
+  border-top: 7px solid #000;
+  width: 80px;
+  position: absolute;
+  top: -51px;
+}
+
+.contacts {
+  position: relative;
+}
+
+.write-us {
+  display: none;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 147px; 
+  margin-top: 98px;
+}
+
+.container-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1160px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 42px;
+}
+
+.user-form-bottom a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-footer {
+  display: flex;
+}
+
+.footer-nav ul {
 	display: flex;
-	margin-top: 84px;
-	width: 1445px;
-	margin-left: 47px;
-	margin-right: 38px;
+	justify-content: center;
+}
+
