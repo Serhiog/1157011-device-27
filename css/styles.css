@@ -268,7 +268,7 @@ body {
 
 .footer-contacts li {
   list-style-type: none;
-   margin-left: 23px;
+  margin-left: 23px;
 }
 
 .write-us label {
@@ -415,15 +415,39 @@ body {
   height: 8px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.info a:hover {
+.info a:hover::before {
+  content: "подробнее";
+  display: flex;
+  background-color: #f0c52e;
+  width: 220px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.info a:active::before {
+  content: "подробнее";
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  background-color: #f0c52e;
+  width: 220px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/*.info a:hover {
   height: 40px;
 }
 
 .info a:active {
   color: rgba(0, 0, 0, 0.3);
-}
+}*/
 
 .list-link::before {
   content: "";
@@ -613,7 +637,8 @@ body {
   content: url("../img/credit.png");
 }
 
-.info-260 a {
+.info-about a,
+.info-write-us a {
   width: 260px;
   display: flex;
   background-color: #f0c52e;
@@ -628,17 +653,83 @@ body {
   letter-spacing: 2.15px;
   text-decoration: none;
   color: #000;
+  position: relative;
 }
 
-.info-260 a:hover,
-.info-200 a:hover {
+.info-about a:hover::before {
+  content: "подробнее о нас";
+  width: 260px;
+  display: flex;
+  background-color: #f0c52e;
   height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
 }
 
-.info-260 a:active,
-.info-200 a:active {
+.info-about a:active::before {
+  content: "подробнее о нас";
   color: rgba(0, 0, 0, 0.3);
-  ;
+  width: 260px;
+  display: flex;
+  background-color: #f0c52e;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.info-write-us a:hover::before {
+  content: "напишите нам";
+  width: 260px;
+  display: flex;
+  background-color: #f0c52e;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+}
+
+.info-write-us a:active::before {
+  content: "напишите нам";
+  color: rgba(0, 0, 0, 0.3);
+  width: 260px;
+  display: flex;
+  background-color: #f0c52e;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  text-decoration: none;
+  position: absolute;
 }
 
 .enter-footer,
@@ -1126,7 +1217,7 @@ th {
   padding-left: 20px;
 }
 
-.about-us .info-260 {
+.about-us .about {
   margin-top: 41px;
 }
 
@@ -1134,7 +1225,7 @@ th {
   margin-top: 44px;
 }
 
-.contacts .info-260 {
+.contacts .about {
   margin-top: 83px;
 }
 
@@ -1159,7 +1250,7 @@ th {
 .container-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 147px; 
+  margin-bottom: 147px;
   margin-top: 98px;
 }
 
@@ -1187,7 +1278,23 @@ th {
 }
 
 .footer-nav ul {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.info-about {
+  margin-top: 82px;
+}
+
+.info-write-us {
+  margin-top: 120px;
+}
+
+.footer-nav a:hover {
+  opacity: 0.6;
+}
+
+.footer-nav a:active {
+  opacity: 0.3;
 }
 
