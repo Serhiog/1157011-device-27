@@ -141,6 +141,7 @@ body {
   line-height: 1;
   letter-spacing: 0.36px;
   color: #000000;
+  white-space: nowrap;
 }
 
 .specification td {
@@ -304,7 +305,15 @@ body {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.14px;
-  color: #dcdcdc;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .filter p {
@@ -332,15 +341,21 @@ body {
   font-weight: normal;
   line-height: 18px;
   letter-spacing: 0.14px;
-  color: #000;
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  opacity: 0.3;
+}
+
+.filter-sort a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-sort a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .filters-items p {
   font-family: "Gilroy";
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 18px font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000;
@@ -448,14 +463,6 @@ body {
   justify-content: center;
   position: absolute;
 }
-
-/*.info a:hover {
-  height: 40px;
-}
-
-.info a:active {
-  color: rgba(0, 0, 0, 0.3);
-}*/
 
 .list-link::before {
   content: "";
@@ -794,6 +801,8 @@ textarea:focus {
 .filter-bluetooth p {
   border-top: 2px solid black;
   width: 201px;
+  padding-top: 16px;
+  margin: 0;
 }
 
 .info-200 a {
@@ -813,6 +822,29 @@ textarea:focus {
   color: #000;
 }
 
+.info-200 a:hover::before {
+  content: "показать";
+  display: flex;
+  background-color: #f0c52e;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.info-200 a:active::before {
+  content: "показать";
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  background-color: #f0c52e;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
 .filters label {
   width: 28px;
   height: 50px;
@@ -828,11 +860,14 @@ textarea:focus {
 
 .nav-bottom {
   display: flex;
-  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
   align-items: center;
   background: #ECECEC;
   width: 760px;
-  height: 70px;
+  margin-left: 72px;
+  margin-top: 62px;
 }
 
 
@@ -979,7 +1014,10 @@ textarea:focus {
 .item {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 360px;
+  margin-top: 69px;
+  margin-left: 40px;
+  padding-left: 32px;
 }
 
 .item-image-1 {
@@ -1132,7 +1170,7 @@ textarea:focus {
 }
 
 .slider {
-  margin-top: -100px;
+  margin-top: -165px;
 }
 
 .specification td,
@@ -1339,6 +1377,7 @@ th {
 
 .filter-sort {
   display: flex;
+  margin-left: 73px;
 }
 
 .filter-sort ul {
@@ -1350,20 +1389,11 @@ th {
 }
 
 .filter .filter-back {
-  margin-left: 70px;
-}
-
-.filter-sort {
-  margin-left: 254px;
-}
-
-.filter-sort .active-link {
-  opacity: 1;
+  margin-left: 200px;
 }
 
 .filter-main {
   display: flex;
-  justify-content: center;
   align-items: center;
   background: #DCDCDC;
   width: 468px;
@@ -1374,17 +1404,39 @@ th {
   border: 5px solid transparent;
   border-top: 8px solid black;
   position: absolute;
-  right: -90px;
+  right: -248px;
   top: 35px;
+  opacity: 0.2;
+}
+
+.filter:hover::before {
+  content: "";
+  opacity: 0.4;
+}
+
+.filter:active::before {
+  content: "";
+  opacity: 1;
 }
 
 .filter::after {
   content: "";
   border: 5px solid transparent;
-  border-bottom: 8px solid #C4C3C3;
+  border-bottom: 8px solid black;
   position: absolute;
-  right: -60px;
+  right: -218px;
   top: 30px;
+  opacity: 0.2;
+}
+
+.filter:hover::after {
+  content: "";
+  opacity: 0.4;
+}
+
+.filter:active::after {
+  content: "";
+  opacity: 1;
 }
 
 .filters-items {
@@ -1392,22 +1444,82 @@ th {
   flex-wrap: wrap;
   width: 1487px;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .form {
   display: flex;
   background: #EFEFEF;
   width: 468px;
+  height: 1217px;
 }
 
 .item-section {
   display: flex;
-  width: 821px;
-  margin-right: auto;
-  padding: 69px;
+  width: 900px;
+  flex-wrap: wrap;
 }
 
 .form form {
-	margin-left: 225px;
+  margin-left: 200px;
+}
+
+.nav-bottom li {
+  padding-top: 27px;
+  padding-bottom: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  position: absolute;
+  left: 1200px;
+}
+
+.nav-pages li {
+  padding: 0;
+  padding-left: 31px;
+}
+
+.filter-price p {
+  padding-bottom: 41px;
+}
+
+.filter-price {
+  padding-top: 69px;
+}
+
+.filter-color {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 67px;
+}
+
+.option {
+  width: 100%;
+}
+
+.filter-color p {
+  padding-bottom: 29px;
+}
+
+.filter-bluetooth {
+  padding-top: 46px;
+  padding-bottom: 53px;
+}
+
+.filter-bluetooth p {
+  padding-bottom: 29px;
+}
+
+.filters input {
+  margin-right: 14px;
+}
+
+.none {
+  display: none;
 }

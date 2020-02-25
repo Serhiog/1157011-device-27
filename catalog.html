@@ -19,7 +19,7 @@
         <input id="search-button" type="submit" class="search-button" value="Найти"></input>
       </form>
       <ul>
-        <li><a class="enter" href="">Войти</a></li>
+        <li><a class="enter" href="">Валентин Петухов Выйти</a></li>
         <li><a class="compare" href="">Сравнить</a></li>
         <li><a class="cart" href="">Корзина</a></li>
       </ul>
@@ -60,7 +60,7 @@
         <div class="filter-sort">
           <p>Сортировка:</p>
           <ul>
-            <li><a href="" class="active-link">По цене</a></li>
+            <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По популярности</a></li>
           </ul>
@@ -76,16 +76,30 @@
           </div>
           <div class="filter-color">
             <p>Цвет</p>
-            <input class="ggg" id="black" type="checkbox" name="black"><label for="black">Черный</label>
-            <input id="white" type="checkbox" name="white"><label for="white">Белый</label>
-            <input id="blue" type="checkbox" name="blue"><label for="blue">Синий</label>
-            <input id="red" type="checkbox" name="red"><label for="red">Красный</label>
-            <input id="rose" type="checkbox" name="rose"><label for="rose">Розовый</label>
+            <div class="option">
+              <input id="black" type="checkbox" name="black"><label for="black">Черный</label>
+            </div>
+            <div class="option">
+              <input id="white" type="checkbox" name="white"><label for="white">Белый</label>
+            </div>
+            <div class="option">
+              <input id="blue" type="checkbox" name="blue"><label for="blue">Синий</label>
+            </div>
+            <div class="option">
+              <input id="red" type="checkbox" name="red"><label for="red">Красный</label>
+            </div>
+            <div class="option">
+              <input id="rose" type="checkbox" name="rose"><label for="rose">Розовый</label>
+            </div>
           </div>
           <div class="filter-bluetooth">
             <p>Bluetooth</p>
-            <input id="yes" type="radio" name="Bluetooth"><label for="yes">Есть</label>
-            <input id="no" type="radio" name="Bluetooth"><label for="no">Нет</label>
+            <div class="option">
+              <input id="yes" type="radio" name="Bluetooth"><label for="yes">Есть</label>
+            </div>
+            <div class="option">
+              <input id="no" type="radio" name="Bluetooth"><label for="no">Нет</label>
+            </div>
           </div>
           <div class="info-200">
             <a href="#">Показать</a>
@@ -93,48 +107,52 @@
         </form>
       </div>
       <div class="item-section">
-          <div class="item">
-            <a>
-              <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
-              <div>
-                <p>Любительская селфи-палка</p> <span class="price-item">500 руб.</span>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a>
-              <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-              <div>
-                <p>Профессиональная селфи-палка</p> <span class="price-item">1500 руб.</span>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a>
-              <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-              <div>
-                <p>Непотопляемая селфи-палка</p> <span class="price-item">2500 руб.</span>
-              </div>
-            </a>
-          </div>
-          <div class="item item-new">
-            <a>
-              <img src="img/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-              <div>
-                <p>Селфи-палка «Следуй за мной»</p> <span class="price-item">4900 руб.</span>
-              </div>
-            </a>
-          </div>
-        <!-- <ul class="nav-bottom">
+        <div class="item">
+          <a>
+            <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
+            <div>
+              <p>Любительская селфи-палка</p> <span class="price-item">500 руб.</span>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a>
+            <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+            <div>
+              <p>Профессиональная селфи-палка</p> <span class="price-item">1500 руб.</span>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a>
+            <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+            <div>
+              <p>Непотопляемая селфи-палка</p> <span class="price-item">2500 руб.</span>
+            </div>
+          </a>
+        </div>
+        <div class="item item-new">
+          <a>
+            <img src="img/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+            <div>
+              <p>Селфи-палка «Следуй за мной»</p> <span class="price-item">4900 руб.</span>
+            </div>
+          </a>
+        </div>
+        <ul class="nav-bottom">
           <li><a href="">Назад</a></li>
-          <li aria-label='Переход на первую страницу'><a href="#">1</a></li>
-          <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
-          <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
+          <ul class="nav-pages">
+            <li aria-label='Переход на первую страницу'><a href="#">1</a></li>
+            <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
+            <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
+          </ul>
           <li><a href="">Вперед</a></li>
-        </ul> -->
+        </ul>
       </div>
     </div>
-<!--     <footer class="footer">
+  </main>
+  <div class="container-footer">
+    <footer class="footer">
       <div class="container">
         <div class="user-form-bottom">
           <div class="logo-footer">
@@ -168,8 +186,8 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/svg/logo-html.svg" alt="Мини логотип сайта" width="27" height="35"></a>
         </div>
       </div>
-    </footer> -->
-    </div>
+    </footer>
+  </div>
 </body>
 
 </html>
