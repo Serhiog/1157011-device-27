@@ -406,12 +406,18 @@ body {
   opacity: 0;
 }
 
-.user-form a:hover,
-.user-form-bottom a:hover {
+.user-form a:hover {
   opacity: 0.6;
 }
 
-.user-form a:active,
+.user-form-bottom a:hover {
+  opacity: 1;
+}
+
+.user-form a:active {
+  opacity: 0.3;
+}
+
 .user-form-bottom a:active {
   opacity: 0.3;
 }
@@ -525,6 +531,9 @@ body {
 .form-search::before {
   content: url("../img/svg/search.svg");
   margin-right: 20px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
 }
 
 .enter::before {
@@ -551,6 +560,11 @@ body {
 .form-placeholder {
   background: rgb(247, 226, 150);
   border: none;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  outline: none;
+  width: 356px;
+  padding-left: 40px;
 }
 
 .form-placeholder::placeholder {
@@ -575,11 +589,19 @@ body {
   border: 2px solid #000000;
   background: rgb(247, 226, 150);
   display: inline-block;
+  position: absolute;
+  margin-left: -2px;
+  top: 1px;
 }
 
 .form-placeholder:focus~.search-button:hover {
   color: #fff;
   background: rgb(0, 0, 0);
+}
+
+.form-search .search-button:active {
+  background: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .bottom-options li {
@@ -608,11 +630,9 @@ body {
   color: #f7e184;
   width: 278px;
   background: #000;
-  justify-content: left;
 }
 
-.warranty,
-.credit {
+.hidden {
   display: none;
 }
 
@@ -757,7 +777,6 @@ body {
   margin-right-left: 14px;
 }
 
-.footer-contacts,
 .footer-contacts-catalog {
   display: flex;
   justify-content: space-between;
@@ -765,6 +784,15 @@ body {
   margin-top: 70px;
   margin-bottom: 67px;
   margin-left: 429px;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 67px;
+  margin-left: 550px;
 }
 
 .footer-contacts ul,
@@ -777,7 +805,7 @@ body {
   border-top: 7px solid #ffc600;
   width: 80px;
   position: absolute;
-  left: 365px;
+  left: 40px;
   margin-top: 10px;
 }
 
@@ -985,10 +1013,6 @@ textarea:focus {
   margin-bottom: 53px;
 }
 
-.catalogs-menu {
-  display: none;
-}
-
 .user-form ul {
   justify-content: space-between;
   margin: 0;
@@ -1018,6 +1042,7 @@ textarea:focus {
 
 .form-search {
   margin-right: auto;
+  position: relative;
 }
 
 .compare {
@@ -1208,17 +1233,19 @@ th {
 .info-content {
   display: flex;
   margin-right: auto;
-  position: relative;
   margin-left: 241px;
+  position: absolute;
+  left: 187px;
+  top: 1330px;
 }
 
-.info-content::before {
+.bottom-options::after {
   content: "";
   border-right: 7px solid;
   height: 319px;
   position: absolute;
-  left: -125px;
-  top: -55px;
+  left: 306px;
+  top: 1258px;
 }
 
 .bottom-options {
@@ -1331,7 +1358,8 @@ th {
 
 .user-form-bottom a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .logo-footer {
@@ -1622,4 +1650,29 @@ th {
   font-weight: 800;
   padding: 0;
   margin: 0;
+}
+
+
+.form-placeholder:focus {
+  border-bottom: 2px solid black;
+}
+
+.bottom-options .ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.plus:active~.catalogs-menu {
+  margin: 0;
+  padding: 0;
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 71px;
+}
+
+.catalogs-menu li {
+  margin-bottom: 20px;
 }
