@@ -458,6 +458,22 @@ body {
   width: 278px;
 }
 
+
+.active {
+  color: #F7E285;
+}
+
+.active::before {
+  content: "";
+  background: #000;
+  width: 278px;
+  height: 40px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
 .list-link::before {
   content: "";
   display: flex;
@@ -571,7 +587,7 @@ body {
   display: inline-block;
   position: absolute;
   margin-left: -2px;
-  top: -15px;
+  top: -16px;
 }
 
 .form-placeholder:focus~.search-button:hover {
@@ -797,6 +813,8 @@ body {
 }
 
 .slider-button button {
+  padding: 0;
+  margin: 0;
   width: 12px;
   height: 12px;
   border: 1px solid black;
@@ -808,14 +826,14 @@ body {
 
 .slider-button button:first-child::before {
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border: 1px solid #000;
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
   right: 3px;
+  transform: translateY(-40%);
 }
 
 .header,
@@ -1432,16 +1450,37 @@ th {
   width: 285px;
 }
 
-.plus:active~.catalogs-menu {
+.plus:hover~.catalogs-menu {
   margin-top: 43px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 71px;
+  width: 551px;
+}
+
+.catalogs-menu {
+  
 }
 
 .catalogs-menu li {
   margin-bottom: 20px;
+
+}
+
+.catalogs-menu a {
+  white-space: nowrap;
+}
+
+.links-3 {
+  width: 181px;
+  margin-right: 58px;
+}
+
+.links-2 {
+  width: 123px;
+  margin-right: 78px;
+}
+
+.link-1 {
+  width: 111px;
 }
 
 .delivery {
