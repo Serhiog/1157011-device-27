@@ -88,9 +88,9 @@
         </div>
         <div class="item none">
           <div class="item-image-2">
-            <img src="img/fitness-tracker.png" alt="Фитнес браслет" width="345" height="485">
+            <span><img src="img/fitness-tracker.png" alt="Фитнес браслет" width="345" height="485"></span>
           </div>
-          <div class="discription-2 reset">
+          <div class="discription discription-2">
             <h1>Худеем<br> правильно!</h1>
             <div class="item-text-2">
               <p class="reset">
@@ -99,7 +99,7 @@
             </div>
             <div class="about-items">
               <div class="info">
-                <a href="#"><span>Подробнее</span></a>
+                <a class="button reset" href="#"><span>Подробнее</span></a>
               </div>
               <div class="slider-button">
                 <button aria-label='Переход на первый слайд'></button>
@@ -119,9 +119,9 @@
         </div>
         <div class="item none">
           <div class="item-image-3">
-            <img src="img/quadrocopter.png" alt="Крутой квадрокоптер" width="526" height="334">
+            <span><img src="img/quadrocopter.png" alt="Крутой квадрокоптер" width="526" height="334"></span>
           </div>
-          <div class="discription-3 reset">
+          <div class="discription discription-3">
             <h1>Порхает как бабочка,<br> жалит как пчела!</h1>
             <div class="item-text-3">
               <p>
@@ -130,7 +130,7 @@
             </div>
             <div class="about-items">
               <div class="info">
-                <a href="#">Подробнее</a>
+                <a class="button reset" href="#"><span>Подробнее</span></a>
               </div>
               <div class="slider-button">
                 <button aria-label='Переход на первый слайд'></button>
@@ -273,33 +273,30 @@
       </div>
     </div>
   </footer>
-  <form class="write-us">
-    <label for='name'>Ваше имя:</label>
-    <input id='name' type="text" name="name" placeholder="Имя Фамилия">
-    <label for='email'>Ваш e-mail:</label>
-    <input id='email' type="text" name="email" placeholder="email@example.com">
-    <label for='letter'>Текст письма:</label>
-    <textarea id='letter' placeholder="В свободной форме" class="textarea"></textarea>
-    <div class="info">
-      <a href="#" type="button">Отправить</a>
+  <div class="form-container">
+    <div class="close-button">
+      <button class="close"></button>
     </div>
-  </form>
+    <div class="form-inside">
+      <div class="form-name-email">
+        <div class="name">
+          <label for='name'>Ваше имя:</label>
+          <input id='name' type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="email">
+          <label for='email'>Ваш e-mail:</label>
+          <input id='email' type="text" name="email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="form-letter">
+        <label class="letter" for='letter'>Текст письма:</label>
+        <textarea id='letter' placeholder="В свободной форме" class="textarea"></textarea>
+      </div>
+      <div class="info form-send">
+        <a href="#" type="button" class="button reset"><span>Отправить</span></a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
-<!-- Доступность:
-aria-label-описание для скринридера
-tabindex
-
-class .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
-  overflow: hidden;
-} - заголовок скрытый
-
--->
