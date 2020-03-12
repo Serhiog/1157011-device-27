@@ -26,15 +26,19 @@
       </ul>
     </div>
     <nav class="catalogs">
-      <div>
+      <div class="plus-menu">
         <a class="plus" href="catalog.html">Каталог товаров</a>
         <ul class="catalogs-menu reset hidden">
-          <li><a href="">Виртуальная реальность</a></li>
-          <li><a href="">Моноподы для селфи</a></li>
-          <li><a href="">Экшн-камеры</a></li>
-          <li><a href="">Фитнес-браслеты</a></li>
-          <li><a href="">Умные часы</a></li>
-          <li><a href="">Квадрокоптеры</a></li>
+          <li class="links-3">
+            <a href="">Виртуальная реальность</a>
+            <a href="">Моноподы для селфи</a>
+            <a href="">Экшн-камеры</a></li>
+          <li class="links-2">
+            <a href="">Фитнес-браслеты</a>
+            <a href="">Умные часы</a></li>
+          <li class="link-1">
+            <a href="">Квадрокоптеры</a>
+          </li>
         </ul>
       </div>
       <ul class="advatages-top reset">
@@ -80,37 +84,73 @@
           <form action="" method="get" class="filters">
             <div class="filter-price">
               <p>Стоимость</p>
-              <input id="price" type="range" min="0" max="1000" name="price">
+              <div class="option">
+                <label class="option">
+                  <input class="check-input range" type="range" min="0" max="5000" name="price">
+                  <div class="prive-value">
+                    <span>от 0</span>
+                    <span>до 5000</span>
+                  </div>
+                </label>
+              </div>
             </div>
             <div class="filter-color">
               <p>Цвет</p>
               <div class="option">
-                <input id="black" type="checkbox" name="black"><label for="black">Черный</label>
+                <label class="option">
+                  <input class="check-input" type="checkbox" name="black" checked>
+                  <span class="check-box"></span>
+                  <span class="color-variant">Черный</span>
+                </label>
               </div>
               <div class="option">
-                <input id="white" type="checkbox" name="white"><label for="white">Белый</label>
+                <label class="option">
+                  <input class="check-input" type="checkbox" name="white">
+                  <span class="check-box"></span>
+                  <span class="color-variant">Белый</span>
+                </label>
               </div>
               <div class="option">
-                <input id="blue" type="checkbox" name="blue"><label for="blue">Синий</label>
+                <label class="option">
+                  <input class="check-input" type="checkbox" name="blue" disabled checked>
+                  <span class="check-box"></span>
+                  <span class="color-variant">Синий</span>
+                </label>
               </div>
               <div class="option">
-                <input id="red" type="checkbox" name="red"><label for="red">Красный</label>
+                <label class="option">
+                  <input class="check-input" type="checkbox" name="red" checked>
+                  <span class="check-box"></span>
+                  <span class="color-variant">Красный</span>
+                </label>
               </div>
               <div class="option">
-                <input id="rose" type="checkbox" name="rose"><label for="rose">Розовый</label>
+                <label class="option">
+                  <input class="check-input" type="checkbox" name="rose">
+                  <span class="check-box"></span>
+                  <span class="color-variant">Розовый</span>
+                </label>
               </div>
             </div>
             <div class="filter-bluetooth">
               <p>Bluetooth</p>
               <div class="option">
-                <input id="yes" type="radio" name="Bluetooth"><label for="yes">Есть</label>
+                <label class="option">
+                  <input class="check-input" type="radio" name="Bluetooth">
+                  <span class="radio-button"></span>
+                  <span class="color-variant">Есть</span>
+                </label>
               </div>
               <div class="option">
-                <input id="no" type="radio" name="Bluetooth"><label for="no">Нет</label>
+                <label class="option">
+                  <input class="check-input" type="radio" name="Bluetooth" disabled>
+                  <span class="radio-button"></span>
+                  <span class="color-variant">Нет</span>
+                </label>
               </div>
             </div>
             <div class="info-200">
-              <a href="#" class="button wide-200"><span>Показать</span></a>
+              <button href="#" class="button wide-200"><span>Показать</span></button>
             </div>
           </form>
         </div>
@@ -121,6 +161,7 @@
                 <div class="cart-button">
                   <div class="add">
                     <button href="#" class="text"><span>В корзину</span></button>
+                    <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
                 </div>
@@ -134,6 +175,7 @@
                 <div class="cart-button">
                   <div class="add">
                     <button href="#" class="text"><span>В корзину</span></button>
+                    <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                 </div>
@@ -147,6 +189,7 @@
                 <div class="cart-button">
                   <div class="add">
                     <button href="#" class="text"><span>В корзину</span></button>
+                    <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                 </div>
@@ -160,6 +203,7 @@
                 <div class="cart-button">
                   <div class="add">
                     <button href="#" class="text"><span>В корзину</span></button>
+                    <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                 </div>
