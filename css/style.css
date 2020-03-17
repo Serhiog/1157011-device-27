@@ -112,7 +112,7 @@ body {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.6px;
 }
 
 .slider p {
@@ -163,6 +163,7 @@ body {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
+  padding-top: 6px;
 }
 
 .info-content p {
@@ -179,6 +180,7 @@ body {
   letter-spacing: 0.21px;
   padding: 0;
   margin: 0;
+  margin-bottom: 43px;
 }
 
 .advantages {
@@ -201,7 +203,7 @@ body {
   content: "○";
   color: #e5e5e5;
   position: absolute;
-  left: -30px;
+  left: -35px;
 
 }
 
@@ -430,7 +432,11 @@ body {
 
 .button span {
   position: relative;
-  left: -9px;
+  left: 2px;
+}
+
+.button .item-about-main {
+  left: -8px;
 }
 
 .button:hover::before {
@@ -451,6 +457,7 @@ body {
 
 .wide-button {
   width: 260px;
+  padding-left: 2px;
 }
 
 .wide-button::before {
@@ -493,7 +500,7 @@ body {
   background: #F7E397;
   width: 160px;
   height: 160px;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
 }
 
 .list-link:hover::before {
@@ -504,8 +511,8 @@ body {
   content: url("../img/svg/popular-1.svg");
   align-items: center;
   position: absolute;
-  top: 50px;
-  left: 34px;
+  top: 51px;
+  left: 31px;
 }
 
 .list-link-vr:active::after {
@@ -516,8 +523,8 @@ body {
   content: url("../img/svg/popular-2.svg");
   align-items: center;
   position: absolute;
-  top: 28px;
-  left: 34px;
+  top: 40px;
+  left: 38px;
 }
 
 .list-link-mnpd:active::after {
@@ -528,8 +535,8 @@ body {
   content: url("../img/svg/popular-3.svg");
   align-items: center;
   position: absolute;
-  top: 50px;
-  left: 34px;
+  top: 37px;
+  left: 49px;
 }
 
 .list-link-ac:active::after {
@@ -540,8 +547,8 @@ body {
   content: url("../img/svg/popular-4.svg");
   align-items: center;
   position: absolute;
-  top: 50px;
-  left: 34px;
+  top: 49px;
+  left: 28px;
 }
 
 .list-link-fb:active::after {
@@ -552,8 +559,8 @@ body {
   content: url("../img/svg/popular-5.svg");
   align-items: center;
   position: absolute;
-  top: 50px;
-  left: 34px;
+  top: 31px;
+  left: 55px;
 }
 
 .list-link-sw:active::after {
@@ -564,8 +571,8 @@ body {
   content: url("../img/svg/popular-6.svg");
   align-items: center;
   position: absolute;
-  top: 50px;
-  left: 17px;
+  top: 48px;
+  left: 13px;
 }
 
 .list-link-cu:active::after {
@@ -588,9 +595,11 @@ body {
 }
 
 .plus::after {
-  content: url("../img/svg/plus.svg");
-  margin-left: 16px;
+  content: url(../img/svg/plus.svg);
+  padding-left: 11px;
   opacity: 0.3;
+  position: absolute;
+  top: 32px;
 }
 
 .form-placeholder {
@@ -632,13 +641,13 @@ body {
 
 .bottom-options li {
   list-style-type: none;
+  margin-bottom: 44px;
 }
 
 .bottom-options a {
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
-  margin-top: 57px;
   font-size: 18px;
   font-weight: 800;
 }
@@ -791,7 +800,7 @@ textarea {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.55px;
   text-decoration: none;
   color: #000;
 }
@@ -1037,13 +1046,12 @@ textarea {
 }
 
 .advatages-top li:last-child {
-  padding-left: 114px;
+  padding-left: 108px;
 }
 
 .advatages-top li:first-child {
-  padding-right: 38px;
+  padding-right: 34px;
 }
-
 
 .enter {
   padding-right: 216px;
@@ -1179,7 +1187,7 @@ textarea {
   border-top: 7px solid #fff;
   width: 100px;
   position: absolute;
-  top: -45px;
+  top: -42px;
 }
 
 .discription-3::before {
@@ -1201,8 +1209,8 @@ textarea {
   line-height: 1;
   letter-spacing: 1.79px;
   position: absolute;
-  top: -95px;
-  right: 40px;
+  top: -92px;
+  right: 10px;
 }
 
 .discription-2::after {
@@ -1239,7 +1247,7 @@ textarea {
 
 .about-items {
   display: flex;
-  margin-top: 64px;
+  margin-top: 51px;
   align-items: center;
 }
 
@@ -1254,12 +1262,19 @@ textarea {
 
 .item-text p {
   width: 500px;
+  margin-top: -12px;
+  margin-left: -1px;
+  letter-spacing: -0.12px;
 }
 
 .container {
   margin: 0 auto;
   width: 1160px;
-  margin-top: 40px;
+  margin-top: 37px;
+}
+
+.container-company {
+  margin-top: -36px;
 }
 
 .item-text-2 {
@@ -1277,29 +1292,30 @@ textarea {
 .list-items {
   display: flex;
   justify-content: space-between;
-  margin-top: 117px;
+  margin-top: 102px;
 }
 
 .bottom-slider {
-  margin-top: 160px;
+  margin-top: 144px;
   background-color: #e5e5e5;
   padding-top: 1px;
+  padding-bottom: 37px;
 }
 
 .bottom-slider .container {
   display: flex;
-  align-items: center;
-  margin-top: -45px;
-  padding-bottom: 133px;
+  padding-bottom: 68px;
 }
 
 .footer .container {
   width: 1160px;
   margin-top: 0;
+  margin-top: -9px;
 }
 
 .slider {
-  padding-left: 80px;
+  padding-left: 91px;
+  margin-top: 69px;
 }
 
 .slider::before {
@@ -1320,27 +1336,29 @@ textarea {
 
 .specification td,
 th {
-  padding-right: 81px;
+  padding-right: 73px;
 }
 
 .specification td {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .specification {
-  margin-top: 76px;
+  margin-top: 61px;
+  margin-left: -4px;
 }
 
 .slider-button {
   display: flex;
   position: absolute;
-  margin-left: 930px;
-  margin-top: 350px;
+  margin-left: 908px;
+  margin-top: 256px;
 }
 
 .info-content {
-  margin-left: 117px;
+  margin-left: 122px;
   width: 760px;
+  margin-top: -43px;
 }
 
 .bottom-options::after {
@@ -1348,8 +1366,8 @@ th {
   border-right: 7px solid;
   height: 319px;
   position: absolute;
-  right: -5px;
-  top: -70px;
+  right: -4px;
+  top: -100px;
 }
 
 .bottom-options {
@@ -1360,40 +1378,46 @@ th {
 .delivery p,
 .warranty p,
 .credit p {
-  margin-top: 43px;
+  margin-top: 32px;
   padding-bottom: 30px;
+  margin-left: -2px;
 }
 
 .lables {
-  margin-top: 94px;
+  margin-top: 132px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .about-company {
-  margin-top: 152px;
+  margin-top: 141px;
   display: flex;
   margin-bottom: 100px;
 }
 
 .about-us .advantages {
-  width: 490px;
-  margin-top: 55px;
+  width: 482px;
+  letter-spacing: -0.23px;
+  margin-left: -1px;
+  padding-bottom: 31px;
 }
 
 .about-us {
-  margin-right: 139px;
+  margin-right: 148px;
   position: relative;
 }
 
 .contacts .advantages {
-  width: 520px;
-  margin-top: 59px;
+  width: 526px;
+  margin-top: 43px;
+  line-height: 2;
+  letter-spacing: normal;
+  word-spacing: -1.2px;
 }
 
 .about-us ul {
-  margin-top: 80px;
-  padding-left: 20px;
+  margin-top: 34px;
+  padding-left: 35px;
 }
 
 .about-us .about {
@@ -1401,7 +1425,8 @@ th {
 }
 
 .contacts img {
-  margin-top: 44px;
+  margin-top: 25px;
+  margin-left: 2px;
 }
 
 .contacts .about {
@@ -1417,8 +1442,14 @@ th {
   top: -51px;
 }
 
+.contacts::before {
+  left: 2px;
+  top: -52px;
+}
+
 .contacts {
   position: relative;
+  margin-left: -31px;
 }
 
 .footer-container {
@@ -1456,6 +1487,7 @@ th {
 
 .logo-footer {
   display: flex;
+  padding-top: 1px;
 }
 
 .footer-nav ul {
@@ -1464,11 +1496,12 @@ th {
 }
 
 .info-about {
-  margin-top: 72px;
+  margin-top: 61px;
 }
 
 .info-write-us {
-  margin-top: 125px;
+  margin-top: 73px;
+  margin-left: 2px;
 }
 
 .footer-nav a:hover {
@@ -1719,7 +1752,8 @@ th {
   font-weight: 800;
   color: black;
   text-decoration: none;
-
+  padding-left: 22px;
+  letter-spacing: 3.7px;
 }
 
 .form-placeholder:focus {
@@ -1742,7 +1776,7 @@ th {
 .selects {
   position: relative;
   width: 285px;
-  margin-top: -40px;
+  margin-top: -10px;
 }
 
 .plus:hover+.catalogs-menu {
@@ -1784,8 +1818,9 @@ th {
 }
 
 .delivery {
-  background: url("../img/delivery.png") no-repeat top right;
-  margin-top: 15px;
+  background: url("../img/delivery.png") no-repeat right;
+  margin-top: 9px;
+  margin-right: 66px;
 }
 
 .mini-logo-footer:hover {
@@ -1981,4 +2016,8 @@ th {
   font-size: 14px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.2);
+}
+
+.item-image-1 img {
+  padding-top: 3px;
 }
