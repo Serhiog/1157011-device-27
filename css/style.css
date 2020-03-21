@@ -288,6 +288,7 @@ body {
 .breadcrumbs li {
   list-style-type: none;
   margin-right: 10px;
+  margin-right: 19px;
 }
 
 .breadcrumbs a {
@@ -295,8 +296,17 @@ body {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.14px;
+  letter-spacing: -0.4px;
   color: rgba(0, 0, 0, 0.3);
+  padding-right: 5px;
+}
+
+.last-item-footer {
+  margin-left: -3px;
+}
+
+.breadcrumbs .arrow-footer {
+  padding-right: 12px;
 }
 
 .breadcrumbs a:hover {
@@ -312,14 +322,14 @@ body {
   font-size: 16px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
-  margin-top: 29px;
+  margin-top: 26px;
   margin-bottom: 30px;
   font-weight: 800;
 }
 
 .filter-sort li {
   list-style-type: none;
-  padding-right: 30px;
+  padding-right: 28px;
 }
 
 
@@ -354,6 +364,9 @@ body {
   line-height: 24px;
   letter-spacing: 0.16px;
   color: #464646;
+  margin-right: 4px;
+  margin-top: 3px;
+  display: inline-block;
 }
 
 .nav-bottom a {
@@ -435,6 +448,10 @@ body {
   transform: translateY(-50%);
 }
 
+.button-footer::before {
+  width: 200px;
+}
+
 .wide-button:before {
   top: 12px;
   left: 0px;
@@ -442,6 +459,7 @@ body {
 
 .wide-button span {
   top: 1px;
+  left: 2px;
 }
 
 .button span {
@@ -613,6 +631,10 @@ body {
   margin-right: 12px;
 }
 
+.footer-enter::before {
+  margin-right: 13px;
+}
+
 .compare::before {
   content: url("../img/svg/compare.svg");
   margin-right: 9px;
@@ -629,6 +651,10 @@ body {
   opacity: 0.3;
   position: absolute;
   top: 32px;
+}
+
+.plus-menu-footer {
+  margin-top: -1px;
 }
 
 .form-placeholder {
@@ -916,7 +942,7 @@ textarea {
 .filter-color p,
 .filter-bluetooth p {
   width: 201px;
-  padding-top: 16px;
+  padding-top: 10px;
   margin: 0;
   font-family: Gilroy, "Arial", sans-serif;
   font-size: 18px;
@@ -933,6 +959,12 @@ textarea {
   color: #000;
   font-weight: 800;
   font-size: 18px;
+}
+
+.info-200 {
+  width: 200px;
+  margin-left: 2px;
+  margin-top: -10px;
 }
 
 .wide-200 {
@@ -961,8 +993,9 @@ textarea {
   margin-top: -12px;
   list-style-type: none;
   margin-left: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 86px;
   padding: 0;
+  margin-top: -89px;
 }
 
 .nav-bottom a {
@@ -992,6 +1025,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding-top: 66px;
+  margin-bottom: -2px;
 }
 
 .user-form-bottom ul {
@@ -1060,6 +1094,10 @@ textarea {
   margin-top: -19px;
 }
 
+.logo-top-footer {
+  margin-top: -16px;
+}
+
 .catalogs {
   width: inherit;
   justify-content: space-between;
@@ -1069,6 +1107,10 @@ textarea {
   padding-bottom: 53px;
   align-items: center;
   position: relative;
+}
+
+.catalogs-footer {
+  padding-bottom: 48px;
 }
 
 .catalogs-items {
@@ -1091,6 +1133,20 @@ textarea {
   align-items: center;
   position: relative;
   padding-top: 14px;
+}
+
+.user-form-footer {
+  padding-top: 11px;
+}
+
+.user-form .exit {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  padding-right: 65px;
 }
 
 .advatages-top li:last-child {
@@ -1340,7 +1396,7 @@ textarea {
 .list-items {
   display: flex;
   justify-content: space-between;
-  margin-top: 101px;
+  margin-top: 100px;
 }
 
 .bottom-slider {
@@ -1358,7 +1414,7 @@ textarea {
 .footer .container {
   width: 1163px;
   margin-top: 0;
-  margin-top: -10px;
+  margin-top: -9px;
 }
 
 .slider {
@@ -1392,7 +1448,7 @@ th {
 }
 
 .specification {
-  margin-top: 62px;
+  margin-top: 60px;
   margin-left: -4px;
 }
 
@@ -1484,7 +1540,7 @@ th {
 }
 
 .about-us ul {
-  margin-top: 37px;
+  margin-top: 34px;
   padding-left: 35px;
 }
 
@@ -1543,7 +1599,7 @@ th {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 17px;
+  margin-top: 16px;
   margin-left: 1px;
 }
 
@@ -1563,6 +1619,10 @@ th {
   margin-right: 8px;
 }
 
+.footer-enter {
+  padding-right: 15px;
+}
+
 .logo-footer {
   display: flex;
   padding-left: 10px;
@@ -1578,11 +1638,11 @@ th {
 }
 
 .info-about {
-  margin-top: 61px;
+  margin-top: 59px;
 }
 
 .info-write-us {
-  margin-top: 73px;
+  margin-top: 72px;
   margin-left: 2px;
 }
 
@@ -1608,32 +1668,44 @@ th {
 }
 
 .title-catalog {
-  margin-top: 44px;
+  margin-top: 37px;
   margin-bottom: 29px;
   margin-left: 60px;
 }
 
 .top-container-catalog .breadcrumbs {
   margin-bottom: 50px;
-  margin-left: 61px;
+  margin-left: 60px;
+  margin-top: 36px;
+  margin-top: -5px;
 }
 
 .container-filter {
   background: linear-gradient(90deg, rgba(220, 220, 220, 1) 50%, rgba(236, 236, 236, 1) 50%);
+  padding-bottom: 3px;
 }
 
 .filter {
   display: flex;
   width: 1300px;
   margin: 0 auto;
+  margin-top: -4px;
+  margin-bottom: -7px;
 }
 
 .filter-sort {
   display: flex;
   padding-left: 73px;
   background: #ECECEC;
-  width: 837px;
+  width: 850px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.filter-footer-top {
+  display: inline-block;
+  margin-left: -107px;
+  margin-top: -7px;
 }
 
 .filter-sort ul {
@@ -1643,12 +1715,14 @@ th {
 }
 
 .filter .filter-back {
-  margin-left: 200px;
+  margin-left: 131px;
+  margin-top: 26px;
 }
 
 .filter-main {
   background: #DCDCDC;
   width: 468px;
+  margin-right: -70px;
 }
 
 .up-down-buttoms {
@@ -1693,8 +1767,8 @@ th {
 
 .form {
   background: #EFEFEF;
-  padding-right: 66px;
   outline: none;
+  margin-right: -3px;
 }
 
 .item-section {
@@ -1703,10 +1777,12 @@ th {
   justify-content: space-between;
   background: #fff;
   padding-top: 131px;
+  padding-right: 70px;
 }
 
 .form form {
-  margin-left: 200px;
+  margin-left: 129px;
+  padding-right: 71px;
 }
 
 .nav-bottom li {
@@ -1736,21 +1812,22 @@ th {
   border-top: 2px solid black;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 }
 
 .filter-color {
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid black;
+  margin-top: 2px;
 }
 
 .filter-color p {
-  padding-bottom: 29px;
+  padding-bottom: 17px;
 }
 
 .filter-bluetooth {
-  margin-top: 46px;
+  margin-top: 32px;
   margin-bottom: 53px;
   border-top: 2px solid black;
 }
@@ -1825,7 +1902,7 @@ th {
   align-items: center;
   justify-content: space-between;
   margin-top: 31px;
-  margin-bottom: 77px;
+  margin-bottom: 120px;
 }
 
 .item a {
@@ -1862,6 +1939,18 @@ th {
 }
 
 .plus-menu:hover .catalogs-menu {
+  margin-top: -10px;
+  display: flex;
+  width: 1160px;
+  background: #F7E296;
+  min-height: 129px;
+  margin-left: -60px;
+  padding-left: 60px;
+  padding-top: 33px;
+  padding-bottom: 13px;
+}
+
+.plus-menu-footer:hover .catalogs-menu {
   margin-top: -10px;
   display: flex;
   width: 1160px;
@@ -1979,9 +2068,10 @@ th {
 .range-items {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 72px;
+  padding-left: 49px;
   justify-content: space-between;
   background: #fff;
+  margin-top: 12px;
 }
 
 .filter-sort .active-price {
@@ -2010,11 +2100,14 @@ th {
   background-image: url("../img/svg/checkbox-off.svg");
   height: 23px;
   width: 23px;
-  margin-left: -36px;
+  margin-left: -40px;
+  margin-top: 8px;
 }
 
 .check-input:checked+.check-box {
-  background-image: url("../img/svg/checkbox-on.svg");
+  background-image: url(../img/svg/checkbox-on.svg);
+  margin-left: -40px;
+  margin-top: 8px;
 }
 
 .check-input:checked+.check-box:hover {
@@ -2039,10 +2132,11 @@ th {
 
 .radio-button {
   position: absolute;
-  background-image: url("../img/svg/radio-off.svg");
+  background-image: url(../img/svg/radio-off.svg);
   width: 25px;
   height: 25px;
-  margin-left: -36px;
+  margin-left: -41px;
+  margin-top: 6px;
 }
 
 .check-input:checked+.radio-button {
@@ -2086,16 +2180,17 @@ th {
 }
 
 .filter-price .option {
-  padding-top: 37px;
+  padding-top: 33px;
   margin-left: -19px;
 }
 
 .prive-value {
   margin-top: -34px;
+  margin-left: -1px;
 }
 
 .prive-value span:first-child {
-  margin-right: 65px
+  margin-right: 59px;
 }
 
 .prive-value span {
@@ -2116,4 +2211,20 @@ th {
 
 .bottom-links {
   padding-top: 10px;
+}
+
+.filter-sort .up-down-buttoms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -9px;
+}
+
+.option .color-variant {
+  margin-left: -1px;
+}
+
+.option-bluetooth {
+  margin-left: 0px;
+  margin-top: -11px;
+  display: inline-block;
 }
