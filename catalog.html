@@ -92,7 +92,14 @@
               <p>Стоимость</p>
               <div class="option">
                 <label class="option">
-                  <input class="check-input range" type="range" min="0" max="5000" name="price">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  <!--  <input class="check-input range" type="range" min="0" max="5000" name="price"> -->
                   <div class="prive-value">
                     <span>от 0</span>
                     <span>до 5000</span>
@@ -143,14 +150,14 @@
               <div class="option-bluetooth">
                 <div class="option">
                   <label class="option">
-                    <input class="check-input" type="radio" name="Bluetooth">
+                    <input class="check-input" type="radio" name="Bluetooth" checked>
                     <span class="radio-button"></span>
                     <span class="color-variant">Есть</span>
                   </label>
                 </div>
                 <div class="option">
                   <label class="option">
-                    <input class="check-input" type="radio" name="Bluetooth" disabled>
+                    <input class="check-input" type="radio" name="Bluetooth">
                     <span class="radio-button"></span>
                     <span class="color-variant">Нет</span>
                   </label>
@@ -188,7 +195,7 @@
                   <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                 </div>
                 <div class="container-price">
-                  <p>Профессиональная<br> селфи-палка</p> <span class="price-item">1500 руб.</span>
+                  <p>Профессиональная<br> селфи-палка</p> <span class="price-item">1 500 руб.</span>
                 </div>
               </a>
             </div>
@@ -202,7 +209,7 @@
                   <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                 </div>
                 <div class="container-price">
-                  <p>Непотопляемая селфи-палка</p> <span class="price-item">2500 руб.</span>
+                  <p>Непотопляемая селфи-палка</p> <span class="price-item">2 500 руб.</span>
                 </div>
               </a>
             </div>
@@ -216,18 +223,22 @@
                   <img src="img/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                 </div>
                 <div class="container-price">
-                  <p>Селфи-палка «Следуй за<br> мной»</p> <span class="price-item">4900 руб.</span>
+                  <p>Селфи-палка «Следуй за<br> мной»</p> <span class="price-item">4 900 руб.</span>
                 </div>
               </a>
             </div>
           </div>
-          <ul class="nav-bottom">
-            <li class="back"><a href="">Назад</a></li>
-            <li aria-label='Переход на первую страницу'><a href=" #">1</a></li>
-            <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
-            <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
-            <li class="next"><a href="">Вперед</a></li>
-          </ul>
+          <div class="nav-bottom-container">
+            <ul class="nav-bottom">
+              <li class="back"><a href="">Назад</a></li>
+              <ul class="inside-list">
+                <li aria-label='Переход на первую страницу'><a href=" #">1</a></li>
+                <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
+                <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
+              </ul>
+              <li class="next"><a href="">Вперед</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -241,7 +252,8 @@
         <ul class="reset">
           <li><a class="enter-footer" href="#"><svg class="svg-footer-enter" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                 <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
-              </svg>Войти</a></li>
+              </svg>Валентин Петухов</a></li>
+          <li><a class="exit exit-bottom" href="#">Выйти</a></li>
           <li><a class="compare-footer" href="#"><svg class="svg-footer-compare" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                 <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" /></svg>Сравнить</a></li>
           <li><a class="cart-footer" href="#"><svg class="svg-footer-cart" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
