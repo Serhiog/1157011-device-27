@@ -470,13 +470,13 @@ body {
 }
 
 .button .item-about-main {
-  left: -9px;
-  top: 0px;
+  left: -20px;
+  top: 1px;
 }
 
 .about-button:before {
-  top: 11px;
-  left: 1px;
+  top: 13px;
+  left: -22px;
 }
 
 .button:hover::before {
@@ -525,7 +525,7 @@ body {
 }
 
 
-.active {
+.selects .active {
   color: #F7E285;
 }
 
@@ -708,6 +708,8 @@ body {
   letter-spacing: 3.6px;
   font-size: 18px;
   font-weight: 800;
+  text-decoration: none;
+  color: black;
 }
 
 .hidden {
@@ -999,17 +1001,11 @@ textarea {
   width: 760px;
   margin-top: -12px;
   list-style-type: none;
-  margin-bottom: 86px;
+  margin-bottom: 78px;
   padding: 0;
-  margin-top: -83px;
   height: 70px;
   justify-content: space-between;
   margin-left: 71px;
-}
-
-.nav-bottom-container {
-  width: 760px;
-  z-index: 10;
 }
 
 .nav-bottom a {
@@ -1197,7 +1193,12 @@ textarea {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 47px;
   margin-top: -74px;
+}
+
+.item-range-catalog {
+  margin-bottom: 145px;
 }
 
 .cart-button {
@@ -1303,7 +1304,7 @@ textarea {
   margin-left: 125px;
   margin-top: 92px;
   position: relative;
-  top: -10px;
+  top: -12px;
 }
 
 .discription::before {
@@ -1416,7 +1417,7 @@ textarea {
 .list-items {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 52px;
 }
 
 .bottom-slider {
@@ -1433,8 +1434,12 @@ textarea {
 
 .footer .container {
   width: 1163px;
-  margin-top: 0;
-  margin-top: -9px;
+  margin-top: -10px;
+}
+
+.footer .container-bottom-footer {
+  width: 1163px;
+  margin-top: 0px;
 }
 
 .slider {
@@ -1468,7 +1473,7 @@ th {
 }
 
 .specification {
-  margin-top: 60px;
+  margin-top: 61px;
   margin-left: -4px;
 }
 
@@ -1797,8 +1802,7 @@ th {
   flex-wrap: wrap;
   justify-content: space-between;
   background: #fff;
-  padding-top: 131px;
-  padding-right: 70px;
+  padding-top: 143px;
 }
 
 .form form {
@@ -1943,7 +1947,6 @@ th {
   align-items: center;
   justify-content: space-between;
   margin-top: 31px;
-  margin-bottom: 120px;
   position: relative;
 }
 
@@ -1953,7 +1956,7 @@ th {
   font-weight: 800;
   color: black;
   text-decoration: none;
-  padding-left: 22px;
+  margin-left: 22px;
   letter-spacing: 3.7px;
 }
 
@@ -2087,8 +2090,20 @@ th {
   width: 136px;
 }
 
+.nav-bottom .first-page {
+  margin-left: 2px;
+}
+
+.nav-bottom .second-page {
+  margin-left: -204px;
+}
+
+.nav-bottom .third-page {
+  margin-left: -202px;
+}
+
 .next:hover {
-  background: #DADADA;
+  s background: #DADADA;
 }
 
 .next a:active {
@@ -2112,10 +2127,10 @@ th {
 .range-items {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 49px;
+  margin-left: 49px;
   justify-content: space-between;
   background: #fff;
-  margin-top: 12px;
+  margin-right: 70px;
 }
 
 .filter-sort .active-price {
@@ -2224,13 +2239,14 @@ th {
 }
 
 .filter-price .option {
-  margin-top: -5px;
+  margin-top: 35px;
   margin-left: -19px;
 }
 
 .prive-value {
-  margin-top: -34px;
+  margin-top: -22px;
   margin-left: -1px;
+  padding-bottom: 11px;
 }
 
 .prive-value span:first-child {
@@ -2277,15 +2293,6 @@ th {
   margin-left: 0px;
   margin-top: -11px;
   display: inline-block;
-}
-
-.filters-items::after {
-  content: "";
-  height: 15px;
-  background-color: #464646;
-  position: absolute;
-  top: 1217px;
-  width: 100%;
 }
 
 .range-controls {

@@ -11,20 +11,20 @@
 <body>
   <header class="header container">
     <div class="logo-top logo-top-footer">
-      <a href="index.html"><img src="img/logo.svg" class="logo" alt="Логотип Device" width="163px" height="35px"></a>
+      <a href="index.html"><img src="img/logo.svg" class="logo" alt="Логотип Device" width="163" height="35"></a>
     </div>
     <div class="user-form user-form-footer">
-      <form class="form-search" action="" method="get">
+      <form class="form-search" action="index.html" method="get">
         <div>
           <input class="form-placeholder" type='search' name="search" placeholder='Поиск по сайту'>
-          <input id="search-button" type="submit" class="search-button" value="Найти"></input>
+          <input id="search-button" type="submit" class="search-button" value="Найти">
         </div>
       </form>
       <ul>
-        <li><a class="enter footer-enter" href="#">Валентин Петухов</a></li>
-        <li><a class="exit" href="#">Выйти</a></li>
-        <li><a class="compare" href="#">Сравнить</a></li>
-        <li><a class="cart" href="#">Корзина</a></li>
+        <li><a class="enter footer-enter" href="profile.html">Валентин Петухов</a></li>
+        <li><a class="exit" href="exit.html">Выйти</a></li>
+        <li><a class="compare" href="compare.html">Сравнить</a></li>
+        <li><a class="cart" href="court.html">Корзина</a></li>
       </ul>
     </div>
     <nav class="catalogs catalogs-footer">
@@ -32,21 +32,21 @@
         <a class="plus" href="catalog.html">Каталог товаров</a>
         <ul class="catalogs-menu reset hidden">
           <li class="links-3">
-            <a href="">Виртуальная реальность</a>
-            <a href="">Моноподы для селфи</a>
-            <a href="">Экшн-камеры</a></li>
+            <a href="virtual.html">Виртуальная реальность</a>
+            <a href="mnpd.html">Моноподы для селфи</a>
+            <a href="action.html">Экшн-камеры</a></li>
           <li class="links-2">
-            <a href="">Фитнес-браслеты</a>
+            <a href="fitness.html">Фитнес-браслеты</a>
             <a href="">Умные часы</a></li>
           <li class="link-1">
-            <a href="">Квадрокоптеры</a>
+            <a href="quadro.html">Квадрокоптеры</a>
           </li>
         </ul>
       </div>
       <ul class="advatages-top reset">
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -87,24 +87,21 @@
     <div class="main-content-catalog">
       <div class="filters-items">
         <div class="form">
-          <form action="" method="get" class="filters">
+          <form action="index.html" method="get" class="filters">
             <div class="filter-price">
               <p>Стоимость</p>
               <div class="option">
-                <label class="option">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <!--  <input class="check-input range" type="range" min="0" max="5000" name="price"> -->
-                  <div class="prive-value">
-                    <span>от 0</span>
-                    <span>до 5000</span>
-                  </div>
-                </label>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <div class="prive-value">
+                  <span>от 0</span>
+                  <span>до 5000</span>
+                </div>
               </div>
             </div>
             <div class="filter-color">
@@ -165,17 +162,17 @@
               </div>
             </div>
             <div class="info-200">
-              <button href="#" class="button wide-200 button-footer"><span>Показать</span></button>
+              <button class="button wide-200 button-footer"><span>Показать</span></button>
             </div>
           </form>
         </div>
         <div class="item-section">
           <div class="range-items">
-            <div class="item">
+            <div class="item item-range-catalog">
               <a href="#">
                 <div class="cart-button">
                   <div class="add">
-                    <button href="#" class="text"><span>В корзину</span></button>
+                    <button class="text" type="button"><span>В корзину</span></button>
                     <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -189,7 +186,7 @@
               <a href="#">
                 <div class="cart-button">
                   <div class="add">
-                    <button href="#" class="text"><span>В корзину</span></button>
+                    <button type="button" class="text"><span>В корзину</span></button>
                     <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/professional-selfie-stick.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
@@ -203,7 +200,7 @@
               <a href="#">
                 <div class="cart-button">
                   <div class="add">
-                    <button href="#" class="text"><span>В корзину</span></button>
+                    <button class="text" type="button"><span>В корзину</span></button>
                     <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
@@ -217,7 +214,7 @@
               <a href="#">
                 <div class="cart-button">
                   <div class="add">
-                    <button href="#" class="text"><span>В корзину</span></button>
+                    <button class="text" type="button"><span>В корзину</span></button>
                     <p class="add-to-cart">Добавить к сравнению</p>
                   </div>
                   <img src="img/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
@@ -228,26 +225,22 @@
               </a>
             </div>
           </div>
-          <div class="nav-bottom-container">
-            <ul class="nav-bottom">
-              <li class="back"><a href="">Назад</a></li>
-              <ul class="inside-list">
-                <li aria-label='Переход на первую страницу'><a href=" #">1</a></li>
-                <li aria-label='Переход на вторую страницу'><a class="no-active" href="">2</a></li>
-                <li aria-label='Переход на третью страницу'><a class="no-active" href="">3</a></li>
-              </ul>
-              <li class="next"><a href="">Вперед</a></li>
-            </ul>
-          </div>
+          <ul class="nav-bottom">
+            <li class="back"><a href="#">Назад</a></li>
+            <li class="first-page" aria-label='Переход на первую страницу'><a href=" #">1</a></li>
+            <li class="second-page" aria-label='Переход на вторую страницу'><a class="no-active" href="#">2</a></li>
+            <li class="third-page" aria-label='Переход на третью страницу'><a class="no-active" href="#">3</a></li>
+            <li class="next"><a href="#">Вперед</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container container-bottom-footer">
       <div class="user-form-bottom">
         <div class="logo-footer">
-          <a href="index.html" alt="Логотип Device" width="163px" height="35px"><img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35"></a>
+          <a href="index.html"><img src="img/logo-footer.png" alt="Логотип сайта" width="163" height="35"></a>
         </div>
         <ul class="reset">
           <li><a class="enter-footer" href="#"><svg class="svg-footer-enter" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
@@ -278,9 +271,9 @@
       </div>
       <div class="footer-contacts">
         <ul class="reset">
-          <li><a href=""><img src="img/facebook.svg" alt="facebook" width="32" height="32"></a></li>
-          <li><a href=""><img src="img/instagram.svg" alt="instagram" width="32" height="32"></a></li>
-          <li><a href=""><img src="img/twitter.svg" alt="twitter" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/facebook.svg" alt="facebook" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/instagram.svg" alt="instagram" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/twitter.svg" alt="twitter" width="32" height="32"></a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="mini-logo-footer" src="img/svg/logo-html.svg" alt="Мини логотип сайта" width="27" height="35"></a>
       </div>
