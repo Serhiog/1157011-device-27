@@ -364,8 +364,8 @@ body {
   line-height: 24px;
   letter-spacing: 0.16px;
   color: #464646;
-  margin-right: 4px;
-  margin-top: 3px;
+  margin-right: -19px;
+  margin-top: 1px;
   display: inline-block;
   position: absolute;
   right: -4px;
@@ -1190,15 +1190,15 @@ textarea {
 }
 
 .item {
+  position: relative;
+  margin-bottom: 47px;
+}
+
+.item-main-page {
   display: flex;
-  justify-content: space-between;
   position: relative;
   margin-bottom: 47px;
   margin-top: -74px;
-}
-
-.item-range-catalog {
-  margin-bottom: 145px;
 }
 
 .cart-button {
@@ -1209,8 +1209,8 @@ textarea {
 
 .add {
   position: relative;
-  left: 130px;
-  top: 150px;
+  left: 152px;
+  top: 149px;
   z-index: 1;
   display: none;
 }
@@ -1802,7 +1802,7 @@ th {
   flex-wrap: wrap;
   justify-content: space-between;
   background: #fff;
-  padding-top: 143px;
+  padding-top: 70px;
 }
 
 .form form {
@@ -1923,8 +1923,8 @@ th {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
-  right: 26px;
-  top: 30px;
+  right: 5px;
+  top: 28px;
 }
 
 .item-new::before {
@@ -1933,8 +1933,8 @@ th {
   width: 60px;
   height: 60px;
   position: absolute;
-  right: 12px;
-  top: 51px;
+  right: -10px;
+  top: 49px;
   z-index: 1;
 }
 
@@ -2103,7 +2103,7 @@ th {
 }
 
 .next:hover {
-  s background: #DADADA;
+  background: #DADADA;
 }
 
 .next a:active {
@@ -2127,10 +2127,10 @@ th {
 .range-items {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 49px;
   justify-content: space-between;
   background: #fff;
-  margin-right: 70px;
+  margin-left: 49px;
+  margin-right: 92px;
 }
 
 .filter-sort .active-price {
