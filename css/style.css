@@ -1227,6 +1227,7 @@ textarea {
 
 .add-to-cart:hover {
   color: #000;
+  cursor: pointer;
 }
 
 .add-to-cart:active {
