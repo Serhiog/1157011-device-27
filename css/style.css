@@ -366,7 +366,6 @@ body {
   color: #464646;
   margin-right: -19px;
   margin-top: 1px;
-  display: inline-block;
   position: absolute;
   right: -4px;
   top: 0px;
@@ -430,6 +429,7 @@ body {
   display: inline-block;
   text-align: center;
   background: no-repeat;
+  vertical-align: middle;
   border: none;
   font-size: 18px;
   font-weight: 800;
@@ -692,6 +692,7 @@ body {
   border: 2px solid #000000;
   background: rgb(247, 226, 150);
   display: inline-block;
+  vertical-align: middle;
   margin-left: -4px;
   position: absolute;
   display: none;
@@ -786,7 +787,7 @@ body {
 }
 
 .form-inside input,
-textarea {
+.form-letter textarea {
   background: #F2F2F2;
   border: none;
   outline: none;
@@ -1465,7 +1466,7 @@ textarea {
 }
 
 .specification td,
-th {
+.specification th {
   padding-right: 73px;
 }
 
@@ -1731,6 +1732,7 @@ th {
 
 .filter-footer-top {
   display: inline-block;
+  vertical-align: middle;
   margin-left: -107px;
   margin-top: -7px;
 }
@@ -1754,6 +1756,7 @@ th {
 
 .up-down-buttoms {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 }
 
@@ -1967,6 +1970,7 @@ th {
 
 .form-placeholder:focus~.search-button {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .form-placeholder:focus~.search-button:hover {
@@ -2021,6 +2025,7 @@ th {
 .catalogs-menu a {
   white-space: nowrap;
   display: inline-block;
+  vertical-align: middle;
   padding-bottom: 10px;
   letter-spacing: -0.1px;
 }
@@ -2255,11 +2260,13 @@ th {
 .prive-value span:first-child {
   margin-top: 3px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .prive-value span:last-child {
   margin-left: 59px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .prive-value span {
@@ -2296,6 +2303,7 @@ th {
   margin-left: 0px;
   margin-top: -11px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .range-controls {
