@@ -397,7 +397,7 @@ body {
 }
 
 .user-form-bottom a:hover {
-  opacity: 0.6;
+  color: #fff;
 }
 
 .user-form a:active {
@@ -405,7 +405,7 @@ body {
 }
 
 .user-form-bottom a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .plus:hover,
@@ -892,6 +892,36 @@ body {
 
 .cart-footer {
   padding-left: 36px;
+}
+
+.cart-footer:hover svg {
+  fill: #ffc600;
+  opacity: 0.6;
+}
+
+.enter-footer:hover svg {
+  fill: #ffc600;
+  opacity: 0.6;
+}
+
+.compare-footer:hover svg {
+  fill: #ffc600;
+  opacity: 0.6;
+}
+
+.cart-footer:active svg {
+  fill: #ffc600;
+  opacity: 0.3;
+}
+
+.enter-footer:active svg {
+  fill: #ffc600;
+  opacity: 0.3;
+}
+
+.compare-footer:active svg {
+  fill: #ffc600;
+  opacity: 0.3;
 }
 
 .footer-contacts-catalog {
@@ -1692,8 +1722,9 @@ body {
 
 .user-form-bottom a {
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: -0.2px;
+
 }
 
 .compare-footer {
@@ -2170,6 +2201,21 @@ body {
   margin-left: -202px;
 }
 
+.second-page a,
+.third-page a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.second-page a:hover,
+.third-page a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.second-page a:active,
+.third-page a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
 .next:hover {
   background: #DADADA;
 }
@@ -2220,7 +2266,7 @@ body {
   position: absolute;
 }
 
-.check-input:focus+.color-variant {
+.check-input:focus .color-variant {
   outline: 1px solid black;
 }
 
