@@ -327,6 +327,7 @@ body {
   margin-top: 26px;
   margin-bottom: 30px;
   font-weight: 800;
+  padding-right: 55px;
 }
 
 .filter-sort li {
@@ -396,7 +397,7 @@ body {
 }
 
 .user-form-bottom a:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .user-form a:active {
@@ -409,12 +410,12 @@ body {
 
 .plus:hover,
 .advatages-top a:hover {
-  color: rgba(185, 170, 117, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .plus:active,
 .advatages-top a:active {
-  color: rgba(185, 170, 117, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalogs-menu a:hover {
@@ -544,6 +545,10 @@ body {
 
 .list-link {
   position: relative;
+}
+
+.list-link:active .active-dir {
+  opacity: 0.3;
 }
 
 .list-link::before {
@@ -907,9 +912,23 @@ body {
 .footer-contacts ul,
 .footer-contacts-catalog ul {
   display: flex;
-  opacity: 0.3;
   margin-right: 481px;
   margin-top: 2px;
+}
+
+.footer-contacts li,
+.footer-contacts-catalog li {
+  opacity: 0.3;
+}
+
+.footer-contacts li:hover,
+.footer-contacts-catalog li:hover {
+  opacity: 0.6;
+}
+
+.footer-contacts li:active,
+.footer-contacts-catalog li:active {
+  opacity: 0.1;
 }
 
 .footer-contacts a {
@@ -1031,6 +1050,16 @@ body {
   letter-spacing: 3.2px;
   color: #000000;
   font-weight: 800;
+}
+
+.nav-bottom a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.nav-bottom a:active {
+  color: rgb(0, 0, 0);
+  opacity: 1;
 }
 
 .no-active {
@@ -1664,7 +1693,6 @@ body {
 .user-form-bottom a {
   text-decoration: none;
   color: #ffffff;
-  opacity: 0.7;
   letter-spacing: -0.2px;
 }
 
@@ -1758,22 +1786,20 @@ body {
   padding-left: 74px;
   background: #ECECEC;
   width: 853px;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .filter-footer-top {
   display: inline-block;
   vertical-align: middle;
-  margin-left: -107px;
   margin-top: -7px;
+  margin-right: 162px;
 }
 
 .filter-sort ul {
   display: flex;
   align-items: center;
-  margin-left: 55px;
+  flex-wrap: wrap;
 }
 
 .filter .filter-back {
@@ -1790,6 +1816,10 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+}
+
+.up-down-buttoms ul {
+  flex-wrap: nowrap;
 }
 
 .up-down-buttoms li:first-child {
@@ -2190,7 +2220,7 @@ body {
   position: absolute;
 }
 
-.check-input:focus + .color-variant {
+.check-input:focus+.color-variant {
   outline: 1px solid black;
 }
 
